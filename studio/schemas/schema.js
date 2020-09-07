@@ -14,6 +14,8 @@ import plotSummary from "./plotSummary";
 import plotSummaries from "./plotSummaries";
 import catering from "./catering";
 import imageSlideshow from "./imageSlideshow";
+import frontapage from "./frontpage/frontpage";
+import frontpageLinks from "./frontpage/frontpage-links";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -31,6 +33,10 @@ export default createSchema({
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     imageSlideshow,
+    frontapage,
+    // When added to this list, object types can be used as
+    // { type: 'typename' } in other document schemas
+    frontpageLinks,
     blockContent,
     plotSummary,
     plotSummaries,
