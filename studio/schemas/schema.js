@@ -12,8 +12,8 @@ import person from "./person";
 import screening from "./screening";
 import plotSummary from "./plotSummary";
 import plotSummaries from "./plotSummaries";
-import catering from "./catering";
-import imageSlideshow from "./imageSlideshow";
+import catering from "./catering/catering";
+import imageSlideshow from "./catering/imageSlideshow";
 import frontapage from "./frontpage/frontpage";
 import frontpageLinks from "./frontpage/frontpage-links";
 

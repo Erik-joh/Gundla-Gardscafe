@@ -1,7 +1,7 @@
 export default {
   name: "imageSlideshow",
   title: "Slide Show",
-  type: "array",
+  type: "object",
   fields: [
     {
       name: "slideImage1",
