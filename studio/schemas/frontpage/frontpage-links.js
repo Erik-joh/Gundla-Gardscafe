@@ -6,12 +6,12 @@ export default {
     {
       name: "titel",
       title: "Titel",
-      type: "string"
+      type: "string",
     },
     {
       name: "description",
       title: "Beskrivning",
-      type: "string"
+      type: "string",
     },
     {
       name: "slug",
@@ -19,16 +19,16 @@ export default {
       type: "slug",
       options: {
         source: "title",
-        maxLength: 100
-      }
+        maxLength: 100,
+      },
     },
     {
       name: "poster",
       title: "Bild",
       type: "image",
       options: {
-        hotspot: true
-      }
-    }
-  ]
+        hotspot: true,
+      },
+    },
+  ],
 };
