@@ -1,5 +1,5 @@
 export default {
-  name: "FrontPage",
+  name: "frontpage",
   title: "StartSida",
   type: "document",
   fields: [
