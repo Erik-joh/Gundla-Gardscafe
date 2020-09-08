@@ -13,7 +13,7 @@ import screening from "./screening";
 import plotSummary from "./plotSummary";
 import plotSummaries from "./plotSummaries";
 import catering from "./catering/catering";
-import imageSlideshow from "./catering/imageSlideshow";
+import cateringLinks from "./catering/catering-links";
 import frontapage from "./frontpage/frontpage";
 import frontpageLinks from "./frontpage/frontpage-links";
 
@@ -30,12 +30,10 @@ export default createSchema({
     person,
     screening,
     catering,
-    // When added to this list, object types can be used as
-    // { type: 'typename' } in other document schemas
-    imageSlideshow,
     frontapage,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
+    cateringLinks,
     frontpageLinks,
     blockContent,
     plotSummary,
