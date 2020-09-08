@@ -4,25 +4,52 @@ export default {
   type: "document",
   fields: [
     {
+      name: "titel",
+      title: "Titel",
+      type: "string"
+    },
+    {
+      name: "description",
+      title: "Beskrivning",
+      type: "string"
+    },
+    {
+      name: "slug",
+      title: "Slug",
+      type: "slug",
+      options: {
+        source: "name",
+        maxLength: 100
+      }
+    },
+    {
+      name: "poster",
+      title: "Bild",
+      type: "image",
+      options: {
+        hotspot: true
+      }
+    },
+    {
       name: "appetizer",
       title: "Förrätt",
-      type: "string",
+      type: "string"
     },
     {
       name: "mainCourse",
       title: "Varmrätt",
-      type: "string",
+      type: "string"
     },
     {
       name: "dessert",
       title: "Efterrätt",
-      type: "string",
+      type: "string"
     },
     {
       name: "imageSlideshow",
       title: "Image Slideshow",
       type: "array",
-      of: [{ type: "catering-links" }],
-    },
-  ],
+      of: [{ type: "catering-links" }]
+    }
+  ]
 };
