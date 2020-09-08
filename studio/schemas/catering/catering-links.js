@@ -1,6 +1,6 @@
 export default {
-  name: "frontpage-links",
-  title: "Startsidans bild navigering",
+  name: "catering-links",
+  title: "Catering navigering",
   type: "object",
   fields: [
     {
@@ -11,21 +11,6 @@ export default {
     {
       name: "description",
       title: "Beskrivning",
-      type: "string",
-    },
-    {
-      name: "appetizer",
-      title: "Appetizer",
-      type: "string",
-    },
-    {
-      name: "mainCourse",
-      title: "Main Course",
-      type: "string",
-    },
-    {
-      name: "dessert",
-      title: "Dessert",
       type: "string",
     },
     {
@@ -40,6 +25,14 @@ export default {
     {
       name: "poster",
       title: "Bild",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: "slideImage",
+      title: "Slide Image",
       type: "image",
       options: {
         hotspot: true,
