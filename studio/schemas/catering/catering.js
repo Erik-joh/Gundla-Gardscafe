@@ -50,6 +50,12 @@ export default {
       title: "Image Slideshow",
       type: "array",
       of: [{ type: "catering-links" }]
+    },
+    {
+      name: "quoteSlideshow",
+      title: "Quote Slideshow",
+      type: "array",
+      of: [{ type: "catering-links" }]
     }
   ]
 };
