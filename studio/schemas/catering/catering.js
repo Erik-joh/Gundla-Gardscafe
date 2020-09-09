@@ -4,58 +4,58 @@ export default {
   type: "document",
   fields: [
     {
-      name: "titel",
+      name: "title",
       title: "Titel",
-      type: "string"
+      type: "array",
+      of: [{ type: "cateringTitle" }],
+    },
+    {
+      name: "headerImage",
+      title: "Titelbild",
+      type: "array",
+      of: [{ type: "cateringHeaderImage" }],
     },
     {
       name: "description",
       title: "Beskrivning",
-      type: "string"
-    },
-    {
-      name: "slug",
-      title: "Slug",
-      type: "slug",
-      options: {
-        source: "name",
-        maxLength: 100
-      }
-    },
-    {
-      name: "poster",
-      title: "Bild",
-      type: "image",
-      options: {
-        hotspot: true
-      }
-    },
-    {
-      name: "appetizer",
-      title: "Förrätt",
-      type: "string"
-    },
-    {
-      name: "mainCourse",
-      title: "Varmrätt",
-      type: "string"
-    },
-    {
-      name: "dessert",
-      title: "Efterrätt",
-      type: "string"
-    },
-    {
-      name: "imageSlideshow",
-      title: "Image Slideshow",
       type: "array",
-      of: [{ type: "catering-links" }]
+      of: [{ type: "cateringDescription" }],
+    },
+    {
+      name: "contentImages",
+      title: "Innehållsbilder",
+      type: "array",
+      of: [{ type: "cateringContentImages" }],
+    },
+    {
+      name: "cateringAppetizers",
+      title: "Förrätter",
+      type: "array",
+      of: [{ type: "cateringAppetizers" }],
+    },
+    {
+      name: "cateringMainCourses",
+      title: "Varmrätter",
+      type: "array",
+      of: [{ type: "cateringMainCourses" }],
+    },
+    {
+      name: "cateringDesserts",
+      title: "Efterrätter",
+      type: "array",
+      of: [{ type: "cateringDesserts" }],
     },
     {
       name: "quoteSlideshow",
-      title: "Quote Slideshow",
+      title: "Citatkarusell",
       type: "array",
-      of: [{ type: "catering-links" }]
-    }
-  ]
+      of: [{ type: "cateringQuoteSlideShow" }],
+    },
+    {
+      name: "imageSlideshow",
+      title: "Bildkarusell",
+      type: "array",
+      of: [{ type: "cateringImageSlideShow" }],
+    },
+  ],
 };

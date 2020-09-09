@@ -13,7 +13,15 @@ import screening from "./screening";
 import plotSummary from "./plotSummary";
 import plotSummaries from "./plotSummaries";
 import catering from "./catering/catering";
-import cateringLinks from "./catering/catering-links";
+import cateringImageSlideShow from "./catering/cateringImageSlideShow";
+import cateringQuoteSlideShow from "./catering/cateringQuoteSlideShow";
+import cateringHeaderImage from "./catering/cateringHeaderImage";
+import cateringAppetizers from "./catering/cateringAppetizers";
+import cateringMainCourses from "./catering/cateringMainCourses";
+import cateringDesserts from "./catering/cateringDesserts";
+import cateringDescription from "./catering/cateringDescription";
+import cateringTitle from "./catering/cateringTitle";
+import cateringContentImages from "./catering/cateringContentImages";
 import frontpage from "./frontpage/frontpage";
 import blockItem from "./frontpage/blockItem";
 
@@ -35,6 +43,15 @@ export default createSchema({
     // { type: 'typename' } in other document schemas
     cateringLinks,
     blockItem,
+    cateringImageSlideShow,
+    cateringQuoteSlideShow,
+    cateringHeaderImage,
+    cateringAppetizers,
+    cateringMainCourses,
+    cateringDesserts,
+    cateringDescription,
+    cateringTitle,
+    cateringContentImages,
     blockContent,
     plotSummary,
     plotSummaries,
