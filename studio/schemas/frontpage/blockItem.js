@@ -1,5 +1,5 @@
 export default {
-  name: "frontpage-links",
+  name: "blockItem",
   title: "Startsidans bild navigering",
   type: "object",
   fields: [
@@ -11,6 +11,11 @@ export default {
     {
       name: "description",
       title: "Beskrivning",
+      type: "string",
+    },
+    {
+      name: "link",
+      title: "länk",
       type: "string",
     },
     {
