@@ -1,5 +1,73 @@
+.cateringWrapper {
+  padding-left: 10%;
+}
+
+.cateringImage {
+  width: 100%;
+}
+
+.cateringTitle {
+  z-index: 10;
+  position: absolute;
+  padding-right: 5rem;
+  color: white;
+}
+
+.cateringImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cateringTextarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 0 4rem 0 0;
+}
+
+.cateringTextarea :first-child {
+  padding-top: 2rem;
+}
+
+.cateringGroup {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cateringImageLeft {
+  width: 403px;
+  height: 600px;
+}
+
+.cateringImageBottom {
+  height: 300px;
+  width: 806px;
+}
+
+.cateringImageRight,
+.cateringMenu,
+.menuSuggestion {
+  height: 300px;
+  width: 403px;
+}
+
+.cateringMenu {
+  background-color: #efece0;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+.menuSuggestion {
+  align-self: flex-start;
+}
+
 .imageSlider {
   display: flex;
-  width: 50%;
+  width: 25%;
   justify-content: center;
+  flex-wrap: wrap;
 }
