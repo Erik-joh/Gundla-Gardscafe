@@ -4,22 +4,16 @@ export default {
   type: "document",
   fields: [
     {
-      name: "title",
-      title: "Titel",
-      type: "array",
-      of: [{ type: "cateringTitle" }],
+      name: "name",
+      title: "Name",
+      type: "string",
+      description: 'Please use "Firstname Lastname" format',
     },
     {
-      name: "headerImage",
-      title: "Titelbild",
+      name: "cateringHeader",
+      title: "Titelinformation",
       type: "array",
-      of: [{ type: "cateringHeaderImage" }],
-    },
-    {
-      name: "description",
-      title: "Beskrivning",
-      type: "array",
-      of: [{ type: "cateringDescription" }],
+      of: [{ type: "cateringHeader" }],
     },
     {
       name: "contentImages",
@@ -28,22 +22,10 @@ export default {
       of: [{ type: "cateringContentImages" }],
     },
     {
-      name: "cateringAppetizers",
-      title: "Förrätter",
+      name: "cateringMenu",
+      title: "Catering Meny",
       type: "array",
-      of: [{ type: "cateringAppetizers" }],
-    },
-    {
-      name: "cateringMainCourses",
-      title: "Varmrätter",
-      type: "array",
-      of: [{ type: "cateringMainCourses" }],
-    },
-    {
-      name: "cateringDesserts",
-      title: "Efterrätter",
-      type: "array",
-      of: [{ type: "cateringDesserts" }],
+      of: [{ type: "cateringMenu" }],
     },
     {
       name: "quoteSlideshow",

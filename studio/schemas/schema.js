@@ -15,12 +15,8 @@ import plotSummaries from "./plotSummaries";
 import catering from "./catering/catering";
 import cateringImageSlideShow from "./catering/cateringImageSlideShow";
 import cateringQuoteSlideShow from "./catering/cateringQuoteSlideShow";
-import cateringHeaderImage from "./catering/cateringHeaderImage";
-import cateringAppetizers from "./catering/cateringAppetizers";
-import cateringMainCourses from "./catering/cateringMainCourses";
-import cateringDesserts from "./catering/cateringDesserts";
-import cateringDescription from "./catering/cateringDescription";
-import cateringTitle from "./catering/cateringTitle";
+import cateringHeader from "./catering/cateringHeader";
+import cateringMenu from "./catering/cateringMenu";
 import cateringContentImages from "./catering/cateringContentImages";
 import frontpage from "./frontpage/frontpage";
 import blockItem from "./frontpage/blockItem";
@@ -41,16 +37,13 @@ export default createSchema({
     frontpage,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
+    blockItem,
     cateringLinks,
     blockItem,
     cateringImageSlideShow,
     cateringQuoteSlideShow,
-    cateringHeaderImage,
-    cateringAppetizers,
-    cateringMainCourses,
-    cateringDesserts,
-    cateringDescription,
-    cateringTitle,
+    cateringHeader,
+    cateringMenu,
     cateringContentImages,
     blockContent,
     plotSummary,
