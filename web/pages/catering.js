@@ -1,5 +1,4 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/catering.module.css";
 import { useRouter } from "next/router";
 import client from "../client";
 import Layout from "../components/layout";
@@ -16,53 +15,58 @@ export default function Catering(props) {
       </Layout>
 
       <main className={styles.main}>
-        <div className="cateringWrapper">
-          <div className="cateringHeader">
-            <div className="cateringImage">
-              <img src={urlFor(props.cateringHeader[0].headerImage).url()} />
-              <h1 className="cateringTitle">{props.cateringHeader[0].title}</h1>
+        <div className={styles.cateringWrapper}>
+          <div className={styles.cateringHeader}>
+            <div className={styles.cateringImage}>
+              <img
+                className={styles.cateringHeaderImage}
+                src={urlFor(props.cateringHeader[0].headerImage).url()}
+              />
+              <h1 className={styles.cateringTitle}>
+                {props.cateringHeader[0].title}
+              </h1>
             </div>
-            <div className="cateringTextarea">
-              <h3>{props.cateringHeader[0].subTitle}</h3>
-              <h3>{props.cateringHeader[0].description}</h3>
+            <div className={styles.cateringTextarea}>
+              <h2>{props.cateringHeader[0].subTitle}</h2>
+              <p>{props.cateringHeader[0].description}</p>
             </div>
-            <div className="cateringGroup">
-              <img
-                className="cateringImageLeft"
-                src={urlFor(props.contentImages[0].contentImages).url()}
-              />
-              <div className="cateringMenu">
-                <p>{props.cateringMenu[0].menuTitle}</p>
-                <p>{props.cateringMenu[0].One}</p>
-                <p>{props.cateringMenu[0].Two}</p>
-                <p>{props.cateringMenu[0].Three}</p>
-              </div>
-              <img
-                className="cateringImageRight"
-                src={urlFor(props.contentImages[1].contentImages).url()}
-              />
-              <img
-                className="menuSuggestion"
-                src={urlFor(props.contentImages[3].contentImages).url()}
-              />
-              <div className="cateringMenu">
-                <p>{props.cateringMenu[2].menuTitle}</p>
-                <p>{props.cateringMenu[2].One}</p>
-                <p>{props.cateringMenu[2].Two}</p>
-                <p>{props.cateringMenu[2].Three}</p>
-              </div>
-              <div className="cateringMenu">
-                <p>{props.cateringMenu[1].menuTitle}</p>
-                <p>{props.cateringMenu[1].One}</p>
-                <p>{props.cateringMenu[1].Two}</p>
-                <p>{props.cateringMenu[1].Three}</p>
-              </div>
+          </div>
+          <div className={styles.cateringGroup}>
+            <img
+              className={styles.cateringImageLeft}
+              src={urlFor(props.contentImages[0].contentImages).url()}
+            />
+            <div className={styles.cateringMenu}>
+              <h4>{props.cateringMenu[0].menuTitle}</h4>
+              <p>{props.cateringMenu[0].One}</p>
+              <p>{props.cateringMenu[0].Two}</p>
+              <p>{props.cateringMenu[0].Three}</p>
+            </div>
+            <img
+              className={styles.cateringImageRight}
+              src={urlFor(props.contentImages[1].contentImages).url()}
+            />
+            <img
+              className={styles.menuSuggestion}
+              src={urlFor(props.contentImages[3].contentImages).url()}
+            />
+            <div className={styles.cateringMenu}>
+              <h4>{props.cateringMenu[1].menuTitle}</h4>
+              <p>{props.cateringMenu[1].One}</p>
+              <p>{props.cateringMenu[1].Two}</p>
+              <p>{props.cateringMenu[1].Three}</p>
+            </div>
+            <div className={styles.cateringMenu}>
+              <h4>{props.cateringMenu[2].menuTitle}</h4>
+              <p>{props.cateringMenu[2].One}</p>
+              <p>{props.cateringMenu[2].Two}</p>
+              <p>{props.cateringMenu[2].Three}</p>
+            </div>
 
-              <img
-                className="cateringImageBottom"
-                src={urlFor(props.contentImages[2].contentImages).url()}
-              />
-            </div>
+            <img
+              className={styles.cateringImageBottom}
+              src={urlFor(props.contentImages[2].contentImages).url()}
+            />
           </div>
         </div>
       </main>

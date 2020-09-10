@@ -1,15 +1,16 @@
 .cateringWrapper {
   padding-left: 10%;
+  width: 1440px;
+  max-width: 100%;
 }
 
-.cateringImage {
-  width: 100%;
+.cateringHeaderImage {
+  width: 1209px;
 }
 
 .cateringTitle {
   z-index: 10;
   position: absolute;
-  padding-right: 5rem;
   color: white;
 }
 
@@ -25,7 +26,7 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-  padding: 0 4rem 0 0;
+  padding: 0 0 0 0;
 }
 
 .cateringTextarea :first-child {
@@ -33,8 +34,9 @@
 }
 
 .cateringGroup {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 403px 403px 403px;
+  grid-template-rows: 25% 25% 25%;
 }
 
 .cateringImageLeft {
@@ -45,6 +47,7 @@
 .cateringImageBottom {
   height: 300px;
   width: 806px;
+  grid-column-start: 2;
 }
 
 .cateringImageRight,
@@ -62,12 +65,5 @@
 }
 
 .menuSuggestion {
-  align-self: flex-start;
-}
-
-.imageSlider {
-  display: flex;
-  width: 25%;
-  justify-content: center;
-  flex-wrap: wrap;
+  grid-column-start: 2;
 }
