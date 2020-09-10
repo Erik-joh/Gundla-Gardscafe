@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import client from "../client";
 import Layout from "../components/layout";
 import urlFor from "../imageBuilder";
-import Slideshow from "../components/catering/slideshow";
 
 export default function Catering(props) {
   const router = useRouter();
@@ -70,7 +69,6 @@ export default function Catering(props) {
             />
           </div>
         </div>
-        <Slideshow></Slideshow>
       </main>
     </div>
   );
