@@ -53,7 +53,7 @@ export default function Catering(props) {
   );
 }
 
-Catering.getInitialProps = async function(context) {
+Catering.getInitialProps = async function (context) {
   const { content = "" } = context.query;
   return await client.fetch(
     `

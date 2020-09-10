@@ -41,7 +41,6 @@ export default createSchema({
     frontpage,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
-    cateringLinks,
     blockItem,
     cateringImageSlideShow,
     cateringQuoteSlideShow,

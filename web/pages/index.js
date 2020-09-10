@@ -1,18 +1,38 @@
 import client from "../client";
 import Layout from "../components/layout";
-import urlFor from "../imageBuilder";
+import Block from "../components/frontpage/block/block";
+import styles from "../styles/frontpage.module.css";
 
 export default function Home(props) {
+  var count = 0;
   console.log(props);
   return (
-    <div>
-      <Layout>
-        <h1>{props.name}</h1>
-        <div>
-          <img src={urlFor(props.imagelink[0].poster).url()} />
+    <Layout>
+      <div className={styles.frontpage}>
+        <div className={styles.blockContainer}>
+          {props.blockItem.map((item) => {
+            count++;
+            var name = "";
+            if (count == 1 || count == 4 || count == 5) {
+              name = "bgImageBlock";
+            } else {
+              name = "logoImageBlock";
+            }
+            return (
+              <Block
+                name={name}
+                image={item.poster}
+                title={item.titel}
+                description={item.description}
+                slug={item.slug}
+                link={item.link}
+                key={item._key}
+              />
+            );
+          })}
         </div>
-      </Layout>
-    </div>
+      </div>
+    </Layout>
   );
 }
 

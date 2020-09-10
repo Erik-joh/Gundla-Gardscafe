@@ -1,0 +1,43 @@
+.bgImageBlock {
+  position: relative;
+  width: 75%;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+.bgImageBlock img {
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.bgImageBlock div div {
+  width: 50%;
+}
+
+.bgImageBlock > div {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+}
+.bgImageBlock h1 {
+  width: 100%;
+  color: white;
+}
+.bgImageBlock p {
+  width: 100%;
+  color: white;
+}
+.bgImageBlock a {
+  color: white;
+}
+.logoImageBlock {
+}
