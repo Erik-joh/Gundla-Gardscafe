@@ -17,19 +17,13 @@ export default function Catering(props) {
       {props.cateringMenu.map((item) => {
         console.log(item);
         count++;
-        var name = "";
-        if (count == 1 || count == 4 || count == 5) {
-          name = "test";
-        } else {
-          name = "test1";
-        }
         return (
           <Menu
-            name={name}
             title={item.menuTitle}
             descriptionOne={item.One}
             descriptionTwo={item.Two}
             descriptionThree={item.Three}
+            key={item._key}
           />
         );
       })}

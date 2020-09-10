@@ -10,11 +10,11 @@ export default function Menu(props) {
   var style;
 
   return (
-    <div className={style}>
+    <div className={styles.test}>
       {image}
       <div>
         <div>
-          <h1>{props.title}</h1>
+          <h4>{props.title}</h4>
           <p>{props.descriptionOne}</p>
           <p>{props.descriptionTwo}</p>
           <p>{props.descriptionThree}</p>
