@@ -38,8 +38,6 @@ export default createSchema({
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockItem,
-    cateringLinks,
-    blockItem,
     cateringImageSlideShow,
     cateringQuoteSlideShow,
     cateringHeader,
