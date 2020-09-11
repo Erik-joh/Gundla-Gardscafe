@@ -1,8 +1,8 @@
 import urlFor from "../../../imageBuilder";
 import styles from "./block.module.css";
-import arrow from "../../../public/arrow.png";
 
 export default function Block(props) {
+  var link;
   if (props.slug) {
     var link = <a href={props.slug.current}>{props.link}</a>;
   }
@@ -17,7 +17,13 @@ export default function Block(props) {
   if (id == 1 || id == 4 || id == 5) {
     style = styles.bgImageBlock;
     titel = <h1>{props.title}</h1>;
-    icon = <img src={arrow} />;
+    icon = <img src={"/arrow.png"} />;
+    var link = (
+      <a href={props.slug.current}>
+        {props.link}
+        {icon}
+      </a>
+    );
   } else {
     style = styles.logoImageBlock;
     titel = <h2>{props.title}</h2>;
@@ -28,6 +34,7 @@ export default function Block(props) {
   } else if (id == 7) {
     style2 = styles.width100;
   }
+  console.log(icon);
 
   return (
     <div className={`${style} ${style2}`}>
@@ -38,8 +45,6 @@ export default function Block(props) {
           <p>{props.description}</p>
         </div>
         {link}
-        <img src={arrow} />
-        {icon}
       </div>
     </div>
   );
