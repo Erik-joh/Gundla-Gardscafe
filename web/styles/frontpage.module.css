@@ -6,3 +6,12 @@
   display: flex;
   flex-wrap: wrap;
 }
+.blockContainer > :nth-child(2) {
+  background-color: #a9a09c;
+}
+.blockContainer > :nth-child(3) {
+  background-color: #e4dfce;
+}
+.blockContainer > :nth-child(7) {
+  background-color: #e4dfce;
+}
