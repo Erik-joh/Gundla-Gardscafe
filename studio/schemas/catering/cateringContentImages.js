@@ -4,7 +4,31 @@ export default {
   type: "object",
   fields: [
     {
-      name: "contentImages",
+      name: "contentImageOne",
+      title: "Innehållsbilder",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: "contentImageTwo",
+      title: "Innehållsbilder",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: "contentImageThree",
+      title: "Innehållsbilder",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: "contentImageFour",
       title: "Innehållsbilder",
       type: "image",
       options: {

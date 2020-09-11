@@ -4,6 +4,7 @@
   max-width: 100%;
 }
 
+<<<<<<< Updated upstream
 .cateringHeaderImage {
   width: 1209px;
 }
@@ -31,6 +32,8 @@
   padding-top: 2rem;
 }
 
+=======
+>>>>>>> Stashed changes
 .cateringGroup {
   justify-content: center;
   display: grid;
