@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import CateringGroup from "../components/catering/cateringGroup";
 import CateringHeader from "../components/catering/cateringHeader";
 import ImageCarousel from "../components/catering/imageCarousel";
+import QuoteCarousel from "../components/catering/quoteCarousel";
 
 export default function Catering(props) {
   console.log(props);
@@ -29,26 +30,37 @@ export default function Catering(props) {
         {props.contentImages.map((item) => {
           return (
             <CateringGroup
-              leftImage={item.contentImageOne}
+              leftImage={item.leftImage}
               menu={props.cateringMenu[0]}
-              rightImage={item.contentImageTwo}
-              suggestionImage={item.contentImageThree}
-              bottomImage={item.contentImageFour}
+              rightImage={item.rightImage}
+              suggestionImage={item.suggestionImage}
+              bottomImage={item.bottomImage}
+              key={item._key}
+            />
+          );
+        })}
+        {props.quoteSlideshow.map((item) => {
+          return (
+            <QuoteCarousel
+              quoteOne={item.slideQuoteOne}
+              quoteTwo={item.slideQuoteTwo}
+              quoteThree={item.slideQuoteThree}
+              key={item._key}
+            />
+          );
+        })}
+        {props.imageSlideshow.map((item) => {
+          console.log(item);
+          return (
+            <ImageCarousel
+              imageOne={item.slideImageOne}
+              imageTwo={item.slideImageTwo}
+              imageThree={item.slideImageThree}
               key={item._key}
             />
           );
         })}
       </div>
-      {props.imageSlideshow.map((item) => {
-        return (
-          <ImageCarousel
-            imageOne={item.slideImageOne}
-            imageTwo={item.slideImageTwo}
-            imageThree={item.slideImageThree}
-            key={item._key}
-          />
-        );
-      })}
     </div>
   );
 }

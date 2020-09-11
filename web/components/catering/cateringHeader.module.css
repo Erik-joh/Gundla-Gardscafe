@@ -1,9 +1,8 @@
 .header img {
-  width: 1209px;
+  width: auto;
 }
 
 .header h1 {
-  z-index: 10;
   position: absolute;
   color: white;
 }
@@ -18,9 +17,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 10rem 3rem 10rem;
+  padding: 3rem 10rem 3rem 10rem;
 }
 
 .text :first-child {
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
