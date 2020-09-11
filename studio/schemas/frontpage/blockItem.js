@@ -7,6 +7,7 @@ export default {
       name: "titel",
       title: "Titel",
       type: "string",
+      readOnly: false,
     },
     {
       name: "description",

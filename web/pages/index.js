@@ -1,18 +1,31 @@
 import client from "../client";
 import Layout from "../components/layout";
-import urlFor from "../imageBuilder";
+import Block from "../components/frontpage/block/block";
+import styles from "../styles/frontpage.module.css";
 
 export default function Home(props) {
-  console.log(props);
+  var count = 0;
   return (
-    <div>
-      <Layout>
-        <h1>{props.name}</h1>
-        <div>
-          <img src={urlFor(props.imagelink[0].poster).url()} />
+    <Layout>
+      <div className={styles.frontpage}>
+        <div className={styles.blockContainer}>
+          {props.blockItem.map((item) => {
+            count++;
+            return (
+              <Block
+                image={item.poster}
+                title={item.titel}
+                description={item.description}
+                slug={item.slug}
+                link={item.link}
+                key={item._key}
+                id={count}
+              />
+            );
+          })}
         </div>
-      </Layout>
-    </div>
+      </div>
+    </Layout>
   );
 }
 

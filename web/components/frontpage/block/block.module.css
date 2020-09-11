@@ -1,0 +1,98 @@
+.bgImageBlock {
+  position: relative;
+  width: 75%;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, #000000 100%);
+}
+.bgImageBlock img {
+  width: 100%;
+  display: block;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.bgImageBlock div div {
+  width: 50%;
+  margin-left: 77px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bgImageBlock > div {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+}
+.bgImageBlock h1 {
+  width: 100%;
+  color: white;
+  margin: 0;
+}
+.bgImageBlock p {
+  width: 100%;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.bgImageBlock a {
+  color: white;
+  margin-bottom: 84px;
+  margin-right: 117px;
+  text-transform: uppercase;
+}
+.logoImageBlock {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logoImageBlock div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logoImageBlock > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logoImageBlock h2 {
+  margin-top: 20px;
+}
+.logoImageBlock p {
+  text-align: center;
+  margin: 20px 57px;
+}
+.logoImageBlock a {
+  margin-top: 20px;
+}
+.bottomBlock {
+  width: 100%;
+}
+.width50 {
+  width: 50%;
+}
+.width100 {
+  width: 100%;
+  height: 45vh;
+}
+.width100 p {
+  width: 50%;
+}

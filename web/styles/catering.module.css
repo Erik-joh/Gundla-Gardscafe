@@ -24,10 +24,8 @@
 .cateringTextarea {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
   align-items: center;
-  padding: 0 0 0 0;
+  padding: 0 10rem 3rem 10rem;
 }
 
 .cateringTextarea :first-child {
@@ -37,6 +35,7 @@
 =======
 >>>>>>> Stashed changes
 .cateringGroup {
+  justify-content: center;
   display: grid;
   grid-template-columns: 403px 403px 403px;
   grid-template-rows: 25% 25% 25%;
@@ -65,6 +64,19 @@
   display: flex;
   flex-direction: column;
   padding: 1rem 2rem 2rem 2rem;
+}
+
+.cateringMenu h4 {
+  padding: 1.5rem 0;
+}
+
+.cateringMenu p {
+  padding: 0 0 0.7rem 0;
+}
+
+.cateringMenu h4,
+.cateringMenu p {
+  margin: 0;
 }
 
 .menuSuggestion {

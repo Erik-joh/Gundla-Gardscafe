@@ -7,7 +7,6 @@ export default {
       name: "name",
       title: "Name",
       type: "string",
-      description: 'Please use "Firstname Lastname" format',
     },
 
     {
@@ -15,6 +14,10 @@ export default {
       title: "Bildrutor",
       type: "array",
       of: [{ type: "blockItem" }],
+      options: {
+        sortable: false,
+      },
+      validation: (Rule) => Rule.length(7),
     },
   ],
 };
