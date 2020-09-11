@@ -1,11 +1,18 @@
 import styles from "../styles/catering.module.css";
-import { useRouter } from "next/router";
 import client from "../client";
 import Layout from "../components/layout";
 import urlFor from "../imageBuilder";
+<<<<<<< Updated upstream
 
 export default function Catering(props) {
   const router = useRouter();
+=======
+import CateringGroup from "../components/catering/cateringGroup";
+import CateringHeader from "../components/catering/cateringHeader";
+import ImageCarousel from "../components/catering/imageCarousel";
+
+export default function Catering(props) {
+>>>>>>> Stashed changes
   console.log(props);
   return (
     <div>
@@ -13,6 +20,7 @@ export default function Catering(props) {
         <title>Catering</title>
         <link rel="icon" href="/favicon.ico" />
       </Layout>
+<<<<<<< Updated upstream
 
       <main className={styles.main}>
         <div className={styles.cateringWrapper}>
@@ -70,6 +78,44 @@ export default function Catering(props) {
           </div>
         </div>
       </main>
+=======
+      <div className={styles.cateringWrapper}>
+        {props.cateringHeader.map((item) => {
+          return (
+            <CateringHeader
+              image={item.headerImage}
+              title={item.title}
+              subTitle={item.subTitle}
+              description={item.description}
+              key={item._key}
+            />
+          );
+        })}
+        ;
+        {props.contentImages.map((item) => {
+          return (
+            <CateringGroup
+              leftImage={item.contentImageOne}
+              menu={props.cateringMenu[0]}
+              rightImage={item.contentImageTwo}
+              suggestionImage={item.contentImageThree}
+              bottomImage={item.contentImageFour}
+              key={item._key}
+            />
+          );
+        })}
+      </div>
+      {props.imageSlideshow.map((item) => {
+        return (
+          <ImageCarousel
+            imageOne={item.slideImageOne}
+            imageTwo={item.slideImageTwo}
+            imageThree={item.slideImageThree}
+            key={item._key}
+          />
+        );
+      })}
+>>>>>>> Stashed changes
     </div>
   );
 }

@@ -1,0 +1,27 @@
+.group {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 403px 403px 403px;
+  grid-template-rows: 25% 25% 25%;
+}
+
+.leftImage {
+  width: 403px;
+  height: 600px;
+}
+
+.rightImage,
+.suggestionImage {
+  height: 300px;
+  width: 403px;
+}
+
+.bottomImage {
+  height: 300px;
+  width: 806px;
+  grid-column-start: 2;
+}
+
+.suggestionImage {
+  grid-column-start: 2;
+}

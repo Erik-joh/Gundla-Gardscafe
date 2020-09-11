@@ -1,0 +1,26 @@
+.header img {
+  width: 1209px;
+}
+
+.header h1 {
+  z-index: 10;
+  position: absolute;
+  color: white;
+}
+
+.headerImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10rem 3rem 10rem;
+}
+
+.text :first-child {
+  padding-top: 2rem;
+}
