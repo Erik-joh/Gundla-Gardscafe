@@ -1,14 +1,10 @@
 import styles from "../styles/catering.module.css";
 import client from "../client";
 import Layout from "../components/layout";
-import urlFor from "../imageBuilder";
-export default function Catering(props) {
-  const router = useRouter();
-
 import CateringGroup from "../components/catering/cateringGroup";
 import CateringHeader from "../components/catering/cateringHeader";
 import ImageCarousel from "../components/catering/imageCarousel";
-  
+
 export default function Catering(props) {
   console.log(props);
   return (
