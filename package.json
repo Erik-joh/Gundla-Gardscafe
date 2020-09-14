@@ -16,6 +16,7 @@
     "lerna": "^3.22.1"
   },
   "dependencies": {
-    "@sanity/client": "^1.150.7"
+    "@sanity/client": "^1.150.7",
+    "sass": "^1.26.10"
   }
 }

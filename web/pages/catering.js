@@ -5,52 +5,62 @@ import CateringGroup from "../components/catering/cateringGroup";
 import CateringHeader from "../components/catering/cateringHeader";
 import ImageCarousel from "../components/catering/imageCarousel";
 import QuoteCarousel from "../components/catering/quoteCarousel";
-import "../styles/image-gallery.module.css";
+import Swipers from "../components/catering/Swiper";
 
 export default function Catering(props) {
   return (
+
     <Layout menu={props.menu}>
-      <div>
-        <div className={styles.cateringWrapper}>
-          {props.catering.cateringHeader.map((item) => {
-            return (
-              <CateringHeader
-                image={item.headerImage}
-                title={item.title}
-                subTitle={item.subTitle}
-                description={item.description}
-                key={item._key}
-              />
-            );
-          })}
-          {props.catering.contentImages.map((item) => {
-            return (
-              <CateringGroup
-                leftImage={item.leftImage}
-                menu={props.catering.cateringMenu[0]}
-                rightImage={item.rightImage}
-                suggestionImage={item.suggestionImage}
-                bottomImage={item.bottomImage}
-                key={item._key}
-              />
-            );
-          })}
-          {props.catering.quoteSlideshow.map((item) => {
-            return (
-              <QuoteCarousel
-                quoteOne={item.slideQuoteOne}
-                quoteTwo={item.slideQuoteTwo}
-                quoteThree={item.slideQuoteThree}
-                key={item._key}
-              />
-            );
-          })}
-          {props.catering.imageSlideshow.map((item) => {
-            console.log(item);
-            return;
-            <ImageCarousel />;
-          })}
-        </div>
+
+
+    <div>
+      <div className={styles.cateringWrapper}>
+        {props.cateringHeader.map((item) => {
+          return (
+            <CateringHeader
+              image={item.headerImage}
+              title={item.title}
+              subTitle={item.subTitle}
+              description={item.description}
+              key={item._key}
+            />
+          );
+        })}
+        ;
+        {props.contentImages.map((item) => {
+          return (
+            <CateringGroup
+              leftImage={item.leftImage}
+              menu={props.cateringMenu[0]}
+              rightImage={item.rightImage}
+              suggestionImage={item.suggestionImage}
+              bottomImage={item.bottomImage}
+              key={item._key}
+            />
+          );
+        })}
+        {props.quoteSlideshow.map((item) => {
+          return (
+            <QuoteCarousel
+              quoteOne={item.slideQuoteOne}
+              quoteTwo={item.slideQuoteTwo}
+              quoteThree={item.slideQuoteThree}
+              key={item._key}
+            />
+          );
+        })}
+        {props.imageSlideshow.map((item) => {
+          console.log(item);
+          return (
+            <Swipers
+              imageOne={urlFor(item.slideImageOne).url()}
+              imageTwo={urlFor(item.slideImageTwo).url()}
+              imageThree={urlFor(item.slideImageThree).url()}
+              key={item._key}
+            />
+          );
+        })}
+
       </div>
     </Layout>
   );
