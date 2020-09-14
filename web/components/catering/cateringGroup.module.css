@@ -1,24 +1,20 @@
 .group {
-  justify-content: center;
   display: grid;
-  grid-template-columns: 403px 403px 403px;
+  grid-template-columns: 35% 35% 35%;
   grid-template-rows: 25% 25% 25%;
 }
 
 .leftImage {
-  width: 403px;
-  height: 600px;
+  width: 100%;
 }
 
 .rightImage,
 .suggestionImage {
-  height: 300px;
-  width: 403px;
+  width: 100%;
 }
 
 .bottomImage {
-  height: 300px;
-  width: 806px;
+  width: 200%;
   grid-column-start: 2;
 }
 
