@@ -1,6 +1,5 @@
 import styles from "../styles/catering.module.css";
 import client from "../client";
-import urlFor from "../imageBuilder";
 import Layout from "../components/layout";
 import CateringGroup from "../components/catering/cateringGroup";
 import CateringHeader from "../components/catering/cateringHeader";
@@ -9,8 +8,11 @@ import QuoteCarousel from "../components/catering/quoteCarousel";
 import Swipers from "../components/catering/Swiper";
 
 export default function Catering(props) {
-  console.log(props);
   return (
+
+    <Layout menu={props.menu}>
+
+
     <div>
       <div className={styles.cateringWrapper}>
         {props.cateringHeader.map((item) => {
@@ -58,17 +60,32 @@ export default function Catering(props) {
             />
           );
         })}
+
       </div>
-    </div>
+    </Layout>
   );
 }
 
-Catering.getInitialProps = async function (context) {
-  const { content = "" } = context.query;
-  return await client.fetch(
+export async function getStaticProps() {
+  // Call an external API endpoint to get posts.
+  // You can use any data fetching library
+  const catering = await client.fetch(
     `
     *[_type == "catering"][0]
-    `,
-    { content }
+  `
   );
-};
+  const menu = await client.fetch(
+    `
+    *[_type == "menu"][0]
+  `
+  );
+  // const posts = await res.json();
+  // By returning { props: posts }, the Blog component
+  // will receive `posts` as a prop at build time
+  return {
+    props: {
+      catering,
+      menu,
+    },
+  };
+}

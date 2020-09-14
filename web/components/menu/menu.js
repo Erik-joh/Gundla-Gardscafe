@@ -3,17 +3,15 @@ import styles from "./menu.module.css";
 import urlFor from "../../imageBuilder";
 
 export default function Menu(props) {
-  console.log(props);
-
   return (
     <div className={styles.menu}>
       <img src={urlFor(props.logo).url()} />
       <nav>
         {props.menuLinks.map((item) => {
           return (
-            <a href={item.slug.current} key={item._key}>
-              {item.link}
-            </a>
+            <Link href={item.slug.current} key={item._key}>
+              <a>{item.link}</a>
+            </Link>
           );
         })}
       </nav>
@@ -40,9 +38,9 @@ export default function Menu(props) {
       <nav className={styles.bottomNav}>
         {props.menuBottomLinks.map((item) => {
           return (
-            <a href={item.slug.current} key={item._key}>
-              {item.link}
-            </a>
+            <Link href={item.slug.current} key={item._key}>
+              <a>{item.link}</a>
+            </Link>
           );
         })}
       </nav>
