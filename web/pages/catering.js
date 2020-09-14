@@ -9,10 +9,6 @@ export default function Catering(props) {
   console.log(props);
   return (
     <div>
-      <Layout>
-        <title>Catering</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Layout>
       <div className={styles.cateringWrapper}>
         {props.cateringHeader.map((item) => {
           return (
