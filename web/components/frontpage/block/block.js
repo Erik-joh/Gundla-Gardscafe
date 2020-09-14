@@ -34,7 +34,6 @@ export default function Block(props) {
   } else if (id == 7) {
     style2 = styles.width100;
   }
-  console.log(icon);
 
   return (
     <div className={`${style} ${style2}`}>

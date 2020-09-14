@@ -20,6 +20,10 @@ import cateringMenu from "./catering/cateringMenu";
 import cateringContentImages from "./catering/cateringContentImages";
 import frontpage from "./frontpage/frontpage";
 import blockItem from "./frontpage/blockItem";
+import menu from "./menu/menu";
+import menuLink from "./menu/menuLink";
+import menuTitleText from "./menu/menuTitleText";
+import socialmedia from "./menu/socialmedia";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -35,8 +39,12 @@ export default createSchema({
     screening,
     catering,
     frontpage,
+    menu,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
+    menuLink,
+    menuTitleText,
+    socialmedia,
     blockItem,
     cateringImageSlideShow,
     cateringQuoteSlideShow,

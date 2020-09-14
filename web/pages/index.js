@@ -6,26 +6,24 @@ import styles from "../styles/frontpage.module.css";
 export default function Home(props) {
   var count = 0;
   return (
-    <Layout>
-      <div className={styles.frontpage}>
-        <div className={styles.blockContainer}>
-          {props.blockItem.map((item) => {
-            count++;
-            return (
-              <Block
-                image={item.poster}
-                title={item.titel}
-                description={item.description}
-                slug={item.slug}
-                link={item.link}
-                key={item._key}
-                id={count}
-              />
-            );
-          })}
-        </div>
+    <div className={styles.frontpage}>
+      <div className={styles.blockContainer}>
+        {props.blockItem.map((item) => {
+          count++;
+          return (
+            <Block
+              image={item.poster}
+              title={item.titel}
+              description={item.description}
+              slug={item.slug}
+              link={item.link}
+              key={item._key}
+              id={count}
+            />
+          );
+        })}
       </div>
-    </Layout>
+    </div>
   );
 }
 
