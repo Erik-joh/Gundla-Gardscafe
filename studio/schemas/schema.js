@@ -24,6 +24,7 @@ import menu from "./menu/menu";
 import menuLink from "./menu/menuLink";
 import menuTitleText from "./menu/menuTitleText";
 import socialmedia from "./menu/socialmedia";
+import cateringInfo from "./catering/cateringInfo";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -51,6 +52,7 @@ export default createSchema({
     cateringHeader,
     cateringMenu,
     cateringContentImages,
+    cateringInfo,
     blockContent,
     plotSummary,
     plotSummaries,

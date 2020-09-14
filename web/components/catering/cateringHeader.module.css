@@ -24,3 +24,14 @@
 .text :first-child {
   padding: 2rem 0;
 }
+
+@media only screen and (max-device-width: 900px) {
+  .headerImage img {
+    width: 100%;
+  }
+
+  .headerImage {
+    width: 300%;
+    height: 362px;
+  }
+}

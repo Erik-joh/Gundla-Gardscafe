@@ -5,7 +5,10 @@ import Menu from "./menu";
 export default function CateringGroup(props) {
   return (
     <div className={styles.group}>
-      <img className={styles.leftImage} src={urlFor(props.leftImage).url()} />
+      <img
+        className={styles.topLeftImage}
+        src={urlFor(props.topLeftImage).url()}
+      />
       <Menu
         title={props.menu.menuTitleAppetizer}
         alternativeOne={props.menu.appetizerOne}
@@ -13,10 +16,9 @@ export default function CateringGroup(props) {
         alternativeThree={props.menu.appetizerThree}
         key={props._key}
       ></Menu>
-      <img className={styles.rightImage} src={urlFor(props.rightImage).url()} />
       <img
-        className={styles.suggestionImage}
-        src={urlFor(props.suggestionImage).url()}
+        className={styles.topRightImage}
+        src={urlFor(props.topRightImage).url()}
       />
       <Menu
         title={props.menu.menuTitleMainCourse}
@@ -25,6 +27,10 @@ export default function CateringGroup(props) {
         alternativeThree={props.menu.mainCourseThree}
         key={props._key}
       ></Menu>
+      <img
+        className={styles.bottomLeftImage}
+        src={urlFor(props.bottomLeftImage).url()}
+      />
       <Menu
         title={props.menu.menuTitleDessert}
         alternativeOne={props.menu.dessertOne}
@@ -33,8 +39,8 @@ export default function CateringGroup(props) {
         key={props._key}
       ></Menu>
       <img
-        className={styles.bottomImage}
-        src={urlFor(props.bottomImage).url()}
+        className={styles.bottomRightImage}
+        src={urlFor(props.bottomRightImage).url()}
       />
     </div>
   );

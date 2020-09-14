@@ -7,6 +7,7 @@ import CateringHeader from "../components/catering/cateringHeader";
 import ImageCarousel from "../components/catering/imageCarousel";
 import QuoteCarousel from "../components/catering/quoteCarousel";
 import Swipers from "../components/catering/Swiper";
+import Form from "../components/catering/booking.js";
 
 export default function Catering(props) {
   console.log(props);
@@ -24,19 +25,31 @@ export default function Catering(props) {
             />
           );
         })}
-        ;
+
         {props.contentImages.map((item) => {
           return (
             <CateringGroup
-              leftImage={item.leftImage}
+              topLeftImage={item.topLeftImage}
               menu={props.cateringMenu[0]}
-              rightImage={item.rightImage}
-              suggestionImage={item.suggestionImage}
-              bottomImage={item.bottomImage}
+              topRightImage={item.topRightImage}
+              bottomLeftImage={item.bottomLeftImage}
+              bottomRightImage={item.bottomRightImage}
               key={item._key}
             />
           );
         })}
+
+        {props.cateringInfo.map((item) => {
+          console.log(item);
+          return (
+            <Form
+              telephoneNumber={item.telephoneNumber}
+              email={item.email}
+              key={item._key}
+            />
+          );
+        })}
+
         {props.quoteSlideshow.map((item) => {
           return (
             <QuoteCarousel

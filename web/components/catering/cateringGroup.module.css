@@ -1,23 +1,22 @@
 .group {
   display: grid;
-  grid-template-columns: 35% 35% 35%;
-  grid-template-rows: 25% 25% 25%;
+  grid-template-columns: 33.3333% 33.3333% 33.3333%;
+  grid-template-rows: 20% 20% 20%;
 }
 
-.leftImage {
+.group img {
   width: 100%;
 }
 
-.rightImage,
-.suggestionImage {
+.topRightImage {
   width: 100%;
 }
 
-.bottomImage {
-  width: 200%;
-  grid-column-start: 2;
+.bottomLeftImage {
+  grid-column-start: 1;
 }
 
-.suggestionImage {
-  grid-column-start: 2;
+.bottomRightImage {
+  grid-column-start: 3;
+  grid-row-start: 2;
 }

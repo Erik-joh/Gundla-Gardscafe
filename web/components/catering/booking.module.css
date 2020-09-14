@@ -1,0 +1,75 @@
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.order {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.group {
+  display: flex;
+  justify-content: center;
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+  background-color: #dfdbca;
+  opacity: 60%;
+  width: 458px;
+  height: 50px;
+  border: none;
+}
+
+.form input[type="text"]::placeholder,
+.form input[type="email"]::placeholder {
+  padding-left: 0.3rem;
+  color: #000000;
+  opacity: 75%;
+}
+
+.submitButton {
+  border: 0;
+  background: #6f6860;
+  opacity: 50%;
+  color: white;
+  width: 184px;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  align-self: flex-end;
+}
+
+.form input[type="text"]:nth-last-child(2) {
+  width: 942px;
+  height: 100px;
+}
+
+.form input[type="text"]:nth-last-child(2)::placeholder {
+  text-align: justify;
+}
+
+.last {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.textTwo {
+  display: flex;
+}
+
+.textTwo p {
+  margin: 0.2rem;
+  font-weight: 500;
+}
