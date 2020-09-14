@@ -6,7 +6,7 @@ import CateringGroup from "../components/catering/cateringGroup";
 import CateringHeader from "../components/catering/cateringHeader";
 import ImageCarousel from "../components/catering/imageCarousel";
 import QuoteCarousel from "../components/catering/quoteCarousel";
-import "../styles/image-gallery.module.css";
+import Swipers from "../components/catering/Swiper";
 
 export default function Catering(props) {
   console.log(props);
@@ -53,8 +53,14 @@ export default function Catering(props) {
         })}
         {props.imageSlideshow.map((item) => {
           console.log(item);
-          return;
-          <ImageCarousel />;
+          return (
+            <Swipers
+              imageOne={urlFor(item.slideImageOne).url()}
+              imageTwo={urlFor(item.slideImageTwo).url()}
+              imageThree={urlFor(item.slideImageThree).url()}
+              key={item._key}
+            />
+          );
         })}
       </div>
     </div>
