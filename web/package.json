@@ -8,13 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "@brainhubeu/react-carousel": "^1.19.26",
     "@sanity/client": "^1.150.7",
     "@sanity/image-url": "^0.140.19",
     "next": "9.5.2",
     "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-slideshow-image": "^3.2.0",
-    "swiper": "^6.2.0"
+    "react-dom": "16.13.1"
   }
 }

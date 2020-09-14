@@ -1,8 +1,6 @@
 import urlFor from "../../imageBuilder";
-import styles from "./imageCarousel.module.css";
+import "../../styles/image-gallery.module.css";
 import { useState } from "react";
-import Carousel, { Dots } from "@brainhubeu/react-carousel";
-import "./style.module.css";
 
 export default function ImageCarousel(props) {
   return (
@@ -12,4 +10,27 @@ export default function ImageCarousel(props) {
       <img src={urlFor(props.imageThree).url()} />
     </Carousel>
   );
+}
+
+import ImageGallery from "react-image-gallery";
+
+const images = [
+  {
+    original: "https://picsum.photos/id/1018/1000/600/",
+    thumbnail: "https://picsum.photos/id/1018/250/150/",
+  },
+  {
+    original: "https://picsum.photos/id/1015/1000/600/",
+    thumbnail: "https://picsum.photos/id/1015/250/150/",
+  },
+  {
+    original: "https://picsum.photos/id/1019/1000/600/",
+    thumbnail: "https://picsum.photos/id/1019/250/150/",
+  },
+];
+
+class MyGallery extends React.Component {
+  render() {
+    return <ImageGallery items={images} />;
+  }
 }
