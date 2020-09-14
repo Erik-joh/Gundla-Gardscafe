@@ -13,20 +13,24 @@ export default function Block(props) {
 
   var style;
   var titel;
-  var icon;
-  if (id == 1 || id == 4 || id == 5) {
+
+  if (id == 4 || id == 5) {
     style = styles.bgImageBlock;
     titel = <h1>{props.title}</h1>;
-    icon = <img src={"/arrow.png"} />;
-    var link = (
-      <a href={props.slug.current}>
-        {props.link}
-        {icon}
-      </a>
-    );
   } else {
     style = styles.logoImageBlock;
     titel = <h2>{props.title}</h2>;
+  }
+  if (props.link) {
+    var icon = <img src={"/linkArrow.png"} />;
+    var link = (
+      <section>
+        <a href={props.slug.current}>
+          {props.link}
+          {icon}
+        </a>
+      </section>
+    );
   }
   var style2;
   if (id == 5 || id == 6) {
@@ -34,17 +38,23 @@ export default function Block(props) {
   } else if (id == 7) {
     style2 = styles.width100;
   }
+  var logo;
+  if (id == 1) {
+    logo = <img src="/logo.png" />;
+    style = styles.bgImageBlock;
+  }
 
   return (
     <div className={`${style} ${style2}`}>
       {image}
       <div>
+        {logo}
         <div>
           {titel}
           <p>{props.description}</p>
         </div>
-        {link}
       </div>
+      {link}
     </div>
   );
 }
