@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@brainhubeu/react-carousel": "^1.19.26",
     "@sanity/client": "^1.150.7",
     "@sanity/image-url": "^0.140.19",
     "next": "9.5.2",

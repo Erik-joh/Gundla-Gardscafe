@@ -1,10 +1,13 @@
 import styles from "../styles/catering.module.css";
 import client from "../client";
+import urlFor from "../imageBuilder";
 import Layout from "../components/layout";
 import CateringGroup from "../components/catering/cateringGroup";
 import CateringHeader from "../components/catering/cateringHeader";
 import ImageCarousel from "../components/catering/imageCarousel";
 import QuoteCarousel from "../components/catering/quoteCarousel";
+import Carousel, { Dots } from "@brainhubeu/react-carousel";
+import "../components/catering/style.module.css";
 
 export default function Catering(props) {
   console.log(props);
@@ -52,12 +55,20 @@ export default function Catering(props) {
         {props.imageSlideshow.map((item) => {
           console.log(item);
           return (
-            <ImageCarousel
-              imageOne={item.slideImageOne}
-              imageTwo={item.slideImageTwo}
-              imageThree={item.slideImageThree}
-              key={item._key}
-            />
+            <Carousel plugins={["arrows", "infinite"]}>
+              <img
+                className={styles.testers}
+                src={urlFor(item.slideImageOne).url()}
+              />
+              <img
+                className={styles.testers}
+                src={urlFor(item.slideImageTwo).url()}
+              />
+              <img
+                className={styles.testers}
+                src={urlFor(item.slideImageThree).url()}
+              />
+            </Carousel>
           );
         })}
       </div>
