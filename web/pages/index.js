@@ -5,35 +5,52 @@ import styles from "../styles/frontpage.module.css";
 
 export default function Home(props) {
   var count = 0;
+  console.log(props);
   return (
-    <div className={styles.frontpage}>
-      <div className={styles.blockContainer}>
-        {props.blockItem.map((item) => {
-          count++;
-          return (
-            <Block
-              image={item.poster}
-              title={item.titel}
-              description={item.description}
-              slug={item.slug}
-              link={item.link}
-              key={item._key}
-              id={count}
-            />
-          );
-        })}
+    <Layout menu={props.menu}>
+      <div className={styles.frontpage}>
+        <h1>{props.posts.name}</h1>
+        <div className={styles.blockContainer}>
+          {props.posts.blockItem.map((item) => {
+            count++;
+            return (
+              <Block
+                image={item.poster}
+                title={item.titel}
+                description={item.description}
+                slug={item.slug}
+                link={item.link}
+                key={item._key}
+                id={count}
+              />
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </Layout>
   );
 }
 
-Home.getInitialProps = async function (context) {
-  // It's important to default the slug so that it doesn't return "undefined"
-  const { content = "" } = context.query;
-  return await client.fetch(
+export async function getStaticProps() {
+  // Call an external API endpoint to get posts.
+  // You can use any data fetching library
+  const posts = await client.fetch(
     `
     *[_type == "frontpage"][0]
-  `,
-    { content }
+  `
   );
-};
+  const menu = await client.fetch(
+    `
+    *[_type == "menu"][0]
+  `
+  );
+  // const posts = await res.json();
+  // By returning { props: posts }, the Blog component
+  // will receive `posts` as a prop at build time
+  return {
+    props: {
+      posts,
+      menu,
+    },
+  };
+}

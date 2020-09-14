@@ -12,7 +12,7 @@ export default function ImageCarousel(props) {
   );
 }
 
-import ImageGallery from "react-image-gallery";
+// import ImageGallery from "react-image-gallery";
 
 const images = [
   {
@@ -29,8 +29,8 @@ const images = [
   },
 ];
 
-class MyGallery extends React.Component {
-  render() {
-    return <ImageGallery items={images} />;
-  }
-}
+// class MyGallery extends React.Component {
+//   render() {
+//     return <ImageGallery items={images} />;
+//   }
+// }
