@@ -1,17 +1,12 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-
-// Import Swiper styles
-import "./swiper.module.scss";
-import "./swiperNavigation.module.scss";
-import "./swiperPagination.module.scss";
-import "./swiperScrollbar.module.scss";
+import SwiperCore, { Navigation, Pagination, Scrollbar } from "swiper";
 import styles from "./swiper.module.css";
+import "../../pages/_app";
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+SwiperCore.use([Navigation, Pagination, Scrollbar]);
 
-const Swipers = (props) => {
+const imageSwiper = (props) => {
   return (
     <Swiper
       spaceBetween={50}
@@ -22,17 +17,17 @@ const Swipers = (props) => {
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide>
-        <img className={styles.testers} src={props.imageOne} />
+      <SwiperSlide className={styles.slide}>
+        <img className={styles.swipe} src={props.imageOne} />
       </SwiperSlide>
-      <SwiperSlide>
-        <img className={styles.testers} src={props.imageTwo} />
+      <SwiperSlide className={styles.slide}>
+        <img className={styles.swipe} src={props.imageTwo} />
       </SwiperSlide>
-      <SwiperSlide>
-        <img className={styles.testers} src={props.imageThree} />
+      <SwiperSlide className={styles.slide}>
+        <img className={styles.swipe} src={props.imageThree} />
       </SwiperSlide>
     </Swiper>
   );
 };
 
-export default Swipers;
+export default imageSwiper;

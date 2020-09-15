@@ -24,7 +24,7 @@ export default class Form extends React.Component {
               Varmt välkommen att höra av er till oss. Er förfrågan är inte
               bindande.
             </p>
-            <div className={styles.textTwo}>
+            <div className={styles.textInfo}>
               <p>Telefon: {this.props.telephoneNumber} | </p>
               <p> Mail: {this.props.email} | </p>
               <p> Via formulär nedan:</p>
