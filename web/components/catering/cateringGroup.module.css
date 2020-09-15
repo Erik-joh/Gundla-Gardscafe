@@ -1,6 +1,6 @@
 .group {
   display: grid;
-  grid-template-columns: 403px 403px 403px;
+  grid-template-columns: 33.3333% 33.3333% 33.3333%;
   grid-template-rows: 25% 25% 25%;
 }
 
