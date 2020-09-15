@@ -28,6 +28,12 @@ export default {
       of: [{ type: "cateringMenu" }],
     },
     {
+      name: "cateringInfo",
+      title: "Catering information",
+      type: "array",
+      of: [{ type: "cateringInfo" }],
+    },
+    {
       name: "quoteSlideshow",
       title: "Citatkarusell",
       type: "array",

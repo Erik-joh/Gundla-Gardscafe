@@ -4,7 +4,7 @@ export default {
   type: "object",
   fields: [
     {
-      name: "leftImage",
+      name: "topLeftImage",
       title: "Innehållsbilder",
       type: "image",
       options: {
@@ -12,7 +12,7 @@ export default {
       },
     },
     {
-      name: "rightImage",
+      name: "topRightImage",
       title: "Innehållsbilder",
       type: "image",
       options: {
@@ -20,7 +20,7 @@ export default {
       },
     },
     {
-      name: "suggestionImage",
+      name: "bottomLeftImage",
       title: "Innehållsbilder",
       type: "image",
       options: {
@@ -28,7 +28,7 @@ export default {
       },
     },
     {
-      name: "bottomImage",
+      name: "bottomRightImage",
       title: "Innehållsbilder",
       type: "image",
       options: {

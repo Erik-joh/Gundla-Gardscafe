@@ -1,25 +1,13 @@
-<<<<<<< Updated upstream
 .header img {
   width: auto;
-=======
 .headerImage img {
-  width: 100%;
-  display: block;
-  display: flex;
-  justify-items: center;
-  justify-content: center;
-  z-index: -1;
-  object-fit: cover;
->>>>>>> Stashed changes
+  width: 200%;
 }
 
 .header h1 {
   position: absolute;
   color: white;
-<<<<<<< Updated upstream
-=======
-  padding: 10rem 5rem 0 0;
->>>>>>> Stashed changes
+  padding: 5rem 10rem 0 0;
 }
 
 .headerImage {
@@ -41,41 +29,14 @@
 .text :first-child {
   padding: 2rem 0;
 }
-<<<<<<< Updated upstream
-=======
 
 @media only screen and (max-device-width: 900px) {
-  .header {
+  .headerImage img {
     width: 100%;
-    align-content: center;
-    min-height: 50vh;
   }
 
   .headerImage {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-    height: 100%;
-    width: 200%;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-  }
-
-  .headerImage img {
     width: 300%;
     height: 362px;
-    align-self: center;
-    display: block;
-  }
-
-  .headerImage h1 {
-    padding: 0 0 0rem 20rem;
-  }
-
-  .text {
-    background-color: #ffffff;
-    width: 200%;
-    justify-content: center;
-    padding: 0 3rem 3rem 3rem;
   }
 }
->>>>>>> Stashed changes
