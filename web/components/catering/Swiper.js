@@ -1,8 +1,10 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination, Scrollbar } from "swiper";
+import SwiperCore from "swiper";
 import styles from "./swiper.module.css";
-import "../../pages/_app";
+import Navigation from "../../pages/_app";
+import Pagination from "../../pages/_app";
+import Scrollbar from "../../pages/_app";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar]);
 
