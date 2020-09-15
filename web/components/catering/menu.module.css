@@ -1,15 +1,26 @@
 
 .menu {
+  box-sizing: border-box;
   background-color: #efece0;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   padding: 1rem 2rem 2rem 2rem;
+<<<<<<< Updated upstream
   height: 300px;
   width: 403px;
 }
 
 
 .menu h4 {
+=======
+  width: 100%;
+  height: 33.3333%;
+  grid-column-start: 2;
+}
+
+.menu h2 {
+>>>>>>> Stashed changes
   padding: 1.5rem 0;
   margin: 0;
 }
@@ -18,4 +29,23 @@
 .menu p {
   padding: 0 0 0.7rem 0;
   margin: 0;
+}
+
+.menu img {
+  position: absolute;
+  width: 180px;
+  left: 55%;
+}
+
+@media only screen and (max-width: 900px) {
+  .menu {
+    padding: 1rem 0 1rem 2rem;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .menu img {
+    left: 140%;
+    width: 150px;
+  }
 }

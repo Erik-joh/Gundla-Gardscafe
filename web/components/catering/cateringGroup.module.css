@@ -1,6 +1,7 @@
 .group {
   justify-content: center;
   display: grid;
+<<<<<<< Updated upstream
   grid-template-columns: 403px 403px 403px;
   grid-template-rows: 25% 25% 25%;
 }
@@ -24,4 +25,61 @@
 
 .suggestionImage {
   grid-column-start: 2;
+=======
+  grid-template-columns: 33.3333% 33.3333% 33.3333%;
+  grid-template-rows: auto auto auto;
+}
+
+.topRightImage,
+.bottomLeftImage,
+.bottomRightImage,
+.topLeftImage {
+  width: 100%;
+}
+
+.topLeftImage {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.bottomLeftImage {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.rightGroup {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuGroup {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+@media only screen and (max-device-width: 900px) {
+  .group {
+    display: flex;
+    width: 200%;
+    flex-direction: column;
+  }
+
+  .group img:nth-child(5) {
+    order: -1;
+  }
+
+  .group img:nth-child(1) {
+    order: -1;
+  }
+
+  .group img:nth-child(7) {
+    order: 3;
+  }
+
+  .group img:nth-child(3) {
+    order: 3;
+  }
+>>>>>>> Stashed changes
 }
