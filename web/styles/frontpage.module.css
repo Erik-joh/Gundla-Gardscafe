@@ -12,23 +12,29 @@
   height: 100%;
 }
 .blockContainer a {
+  position: absolute;
+  bottom: 5px;
+  right: 30px;
+  text-transform: uppercase;
+}
+.blockContainer a > p {
   font-family: Amatic SC;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
+  margin-left: 10px;
   position: absolute;
-  bottom: 50px;
-  right: 10%;
-  text-transform: uppercase;
+  width: 100%;
+}
+.blockContainer :nth-child(4) a > p {
+  margin-left: 1px;
+  top: -5px;
 }
 .blockContainer a > img {
-  position: absolute;
-  right: inherit;
-  margin-right: calc(100% - 160px);
-  bottom: -24px;
+  bottom: 0px;
 }
-.blockContainer a > img:hover {
+.blockContainer a:hover {
   transform: scale(1.1);
 }
 .frontpage > h1 {
@@ -57,11 +63,11 @@
   }
   .blockContainer a {
     bottom: 0px;
-    right: 25%;
+    right: 30px;
   }
   .blockContainer a > img {
     bottom: -24px;
-    margin-right: calc(100% - 170px);
+    margin-right: -60%;
   }
   .blockContainer > :nth-child(1) {
     height: 100vh;

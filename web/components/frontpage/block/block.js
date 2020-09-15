@@ -21,17 +21,7 @@ export default function Block(props) {
     style = styles.logoImageBlock;
     titel = <h2>{props.title}</h2>;
   }
-  if (props.link) {
-    var icon = <img src={"/linkArrow.png"} />;
-    var link = (
-      <section>
-        <a href={props.slug.current}>
-          {props.link}
-          {icon}
-        </a>
-      </section>
-    );
-  }
+
   var style2;
   if (id == 5 || id == 6) {
     style2 = styles.width50;
@@ -43,7 +33,22 @@ export default function Block(props) {
     logo = <img src="/logo.png" />;
     style = styles.bgImageBlock;
   }
-
+  var icon;
+  if (props.link) {
+    if (id == 6 || id == 7) {
+      icon = <img src={"/linkArrowShortBlack.png"} />;
+    } else if (id == 5) {
+      icon = <img src={"/linkArrowShort.png"} />;
+    } else {
+      icon = <img src={"/linkArrow.png"} />;
+    }
+    var link = (
+      <a href={props.slug.current}>
+        <p>{props.link}</p>
+        {icon}
+      </a>
+    );
+  }
   return (
     <div className={`${style} ${style2}`}>
       {image}
