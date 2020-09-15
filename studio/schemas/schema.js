@@ -13,9 +13,18 @@ import screening from "./screening";
 import plotSummary from "./plotSummary";
 import plotSummaries from "./plotSummaries";
 import catering from "./catering/catering";
-import cateringLinks from "./catering/catering-links";
-import frontapage from "./frontpage/frontpage";
-import frontpageLinks from "./frontpage/frontpage-links";
+import cateringImageSlideShow from "./catering/cateringImageSlideShow";
+import cateringQuoteSlideShow from "./catering/cateringQuoteSlideShow";
+import cateringHeader from "./catering/cateringHeader";
+import cateringMenu from "./catering/cateringMenu";
+import cateringContentImages from "./catering/cateringContentImages";
+import frontpage from "./frontpage/frontpage";
+import blockItem from "./frontpage/blockItem";
+import menu from "./menu/menu";
+import menuLink from "./menu/menuLink";
+import menuTitleText from "./menu/menuTitleText";
+import socialmedia from "./menu/socialmedia";
+import cateringInfo from "./catering/cateringInfo";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -30,11 +39,20 @@ export default createSchema({
     person,
     screening,
     catering,
-    frontapage,
+    frontpage,
+    menu,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
-    cateringLinks,
-    frontpageLinks,
+    menuLink,
+    menuTitleText,
+    socialmedia,
+    blockItem,
+    cateringImageSlideShow,
+    cateringQuoteSlideShow,
+    cateringHeader,
+    cateringMenu,
+    cateringContentImages,
+    cateringInfo,
     blockContent,
     plotSummary,
     plotSummaries,

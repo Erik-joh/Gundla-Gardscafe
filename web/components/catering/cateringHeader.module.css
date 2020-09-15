@@ -1,0 +1,44 @@
+.header img {
+  width: auto;
+}
+
+.headerImage img {
+  width: 200%;
+}
+
+.header h1 {
+  position: absolute;
+  color: white;
+  padding: 5rem 10rem 0 0;
+}
+
+.headerImage {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 10rem 3rem 10rem;
+}
+
+.text :first-child {
+  padding: 2rem 0;
+}
+
+@media only screen and (max-device-width: 900px) {
+  .headerImage img {
+    width: 100%;
+  }
+
+  .headerImage {
+    width: 300%;
+    height: 362px;
+  }
+}

@@ -1,28 +1,23 @@
 export default {
-  name: "FrontPage",
-  title: "StartSida",
+  name: "frontpage",
+  title: "Startsida",
   type: "document",
   fields: [
     {
       name: "name",
-      title: "Name",
+      title: "Sidtitel",
       type: "string",
-      description: 'Please use "Firstname Lastname" format',
     },
+
     {
-      name: "slug",
-      title: "Slug",
-      type: "slug",
-      options: {
-        source: "name",
-        maxLength: 100,
-      },
-    },
-    {
-      name: "imagelink",
-      title: "Bild navigering",
+      name: "blockItem",
+      title: "Bildrutor",
       type: "array",
-      of: [{ type: "frontpage-links" }],
+      of: [{ type: "blockItem" }],
+      options: {
+        sortable: false,
+      },
+      validation: (Rule) => Rule.length(7),
     },
   ],
 };

@@ -1,5 +1,5 @@
 export default {
-  name: "frontpage-links",
+  name: "blockItem",
   title: "Startsidans bild navigering",
   type: "object",
   fields: [
@@ -7,6 +7,7 @@ export default {
       name: "titel",
       title: "Titel",
       type: "string",
+      readOnly: false,
     },
     {
       name: "description",
@@ -14,18 +15,8 @@ export default {
       type: "string",
     },
     {
-      name: "appetizer",
-      title: "Appetizer",
-      type: "string",
-    },
-    {
-      name: "mainCourse",
-      title: "Main Course",
-      type: "string",
-    },
-    {
-      name: "dessert",
-      title: "Dessert",
+      name: "link",
+      title: "länk",
       type: "string",
     },
     {
