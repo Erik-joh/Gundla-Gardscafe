@@ -48,7 +48,7 @@
   color: white;
   margin: 0;
 }
-.bgImageBlock p {
+.bgImageBlock div > p {
   width: 100%;
   color: white;
   margin-top: 20px;
@@ -82,8 +82,9 @@
 .logoImageBlock h2 {
   margin-top: 20px;
 }
-.logoImageBlock p {
+.logoImageBlock div > p {
   text-align: center;
+  padding-bottom: 50px;
   margin: 20px 0px;
 }
 
@@ -93,9 +94,7 @@
 .width50 {
   width: 50%;
 }
-.width50 section a {
-  right: 20%;
-}
+
 .width100 {
   width: 100%;
   min-height: 45vh;
@@ -121,9 +120,7 @@
     align-self: center;
     display: block;
   }
-  .bgImageBlock section a {
-    bottom: 30px;
-  }
+
   .bgImageBlock div div {
     text-align: center;
     width: 80%;
@@ -139,16 +136,13 @@
     width: 80%;
   }
 
-  .logoImageBlock img {
+  .logoImageBlock > img {
     margin-top: 50px;
   }
   .width100 h2 {
     margin-top: 40px;
   }
-  .width100 p {
+  .width100 div > p {
     width: 80%;
-  }
-  .width50 section a {
-    right: 25%;
   }
 }
