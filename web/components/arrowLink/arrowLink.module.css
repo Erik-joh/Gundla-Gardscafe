@@ -1,0 +1,38 @@
+.arrowLink {
+  position: absolute;
+  bottom: 5px;
+  right: 30px;
+  text-transform: uppercase;
+}
+.arrowLink > p {
+  font-family: Amatic SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  margin-left: 10px;
+  position: absolute;
+  width: 100%;
+}
+.arrowLink > img {
+  bottom: 0px;
+}
+.arrowLink:hover {
+  transform: scale(1.1);
+}
+.black {
+  color: black;
+}
+.white {
+  color: white;
+}
+@media only screen and (max-width: 900px) {
+  .arrowLink {
+    bottom: 0px;
+    right: 30px;
+  }
+  .arrowLink > img {
+    bottom: -24px;
+    margin-right: -60%;
+  }
+}
