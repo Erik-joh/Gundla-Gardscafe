@@ -44,8 +44,6 @@ export default function Home(props) {
 }
 
 export async function getStaticProps() {
-  // Call an external API endpoint to get posts.
-  // You can use any data fetching library
   const posts = await client.fetch(
     `
     *[_type == "frontpage"][0]
@@ -56,10 +54,6 @@ export async function getStaticProps() {
     *[_type == "menu"][0]
   `
   );
-
-  // const posts = await res.json();
-  // By returning { props: posts }, the Blog component
-  // will receive `posts` as a prop at build time
   return {
     props: {
       posts,

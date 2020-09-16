@@ -1,5 +1,6 @@
 import urlFor from "../../../imageBuilder";
 import styles from "./block.module.css";
+import ArrowLink from "../../arrowLink/arrowLink";
 
 export default function Block(props) {
   var link;
@@ -33,24 +34,39 @@ export default function Block(props) {
     logo = <img src="/logo.png" />;
     style = styles.bgImageBlock;
   }
-  var icon;
+  var link;
   if (props.link) {
     if (id == 6 || id == 7) {
-      icon = <img src={"/linkArrowShortBlack.png"} />;
+      link = (
+        <ArrowLink
+          slug={props.slug.current}
+          link={props.link}
+          type="b"
+          color="black"
+        />
+      );
     } else if (id == 5) {
-      icon = <img src={"/linkArrowShort.png"} />;
+      link = (
+        <ArrowLink
+          slug={props.slug.current}
+          link={props.link}
+          type="w"
+          color="white"
+        />
+      );
     } else {
-      icon = <img src={"/linkArrow.png"} />;
+      link = (
+        <ArrowLink
+          slug={props.slug.current}
+          link={props.link}
+          type="lw"
+          color="white"
+        />
+      );
     }
-    var link = (
-      <a href={props.slug.current}>
-        <p>{props.link}</p>
-        {icon}
-      </a>
-    );
   }
   return (
-    <div className={`${style} ${style2}`}>
+    <div className={`${style} ${style2}`} style={{ width: props.width }}>
       {image}
       <div>
         {logo}

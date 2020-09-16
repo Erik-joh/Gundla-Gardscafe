@@ -1,0 +1,21 @@
+.activities {
+  width: 90%;
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.activitiesBlock {
+  background-color: black;
+}
+@media only screen and (max-width: 900px) {
+  .activities {
+    width: 100%;
+    margin-left: 0;
+  }
+  .activities :nth-child(5) {
+    order: 3;
+  }
+  .activities :nth-child(6) {
+    order: 2;
+  }
+}

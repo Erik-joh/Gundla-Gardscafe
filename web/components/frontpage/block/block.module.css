@@ -54,9 +54,6 @@
   margin-top: 20px;
   margin-bottom: 50px;
 }
-.bgImageBlock a {
-  color: white;
-}
 
 .logoImageBlock {
   width: 25%;
@@ -84,8 +81,11 @@
 }
 .logoImageBlock div > p {
   text-align: center;
-  padding-bottom: 50px;
-  margin: 20px 0px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.logoImageBlock > img {
+  margin-top: 40px;
 }
 
 .bottomBlock {
@@ -129,8 +129,8 @@
   }
 
   .logoImageBlock {
-    width: 100%;
-    padding-bottom: 100px;
+    min-width: 100%;
+    padding-bottom: 0px;
   }
   .logoImageBlock div div {
     width: 80%;
