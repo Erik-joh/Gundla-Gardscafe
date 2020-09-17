@@ -4,11 +4,10 @@
   grid-template-rows: 25% 25% 25%;
 }
 
-.group img {
-  width: 100%;
-}
-
-.topRightImage {
+.topLeftImage,
+.bottomLeftImage,
+.topRightImage,
+.bottomRightImage {
   width: 100%;
 }
 
@@ -16,9 +15,6 @@
   grid-column-start: 1;
 }
 
-.suggestionImage {
-  grid-column-start: 2;
-}
 .bottomRightImage {
   grid-column-start: 3;
   grid-row-start: 2;
