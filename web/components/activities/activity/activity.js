@@ -6,6 +6,7 @@ import React, { useState } from "react";
 export default function Activity(props) {
   var linkText;
   var styleA;
+  const [increaseHeight, setIncreaseHeight] = useState("");
   const [showText, setShowText] = useState("");
   const [gradient, setGradient] = useState("");
   if (props.url) {
@@ -17,14 +18,14 @@ export default function Activity(props) {
   }
   return (
     <div
-      className={`${styles.activity} ${showText}`}
+      className={`${styles.activity} ${increaseHeight}`}
       style={{ width: props.width }}
     >
       <img src={urlFor(props.image).url()} />
       <div className={`${styles.gradient} ${gradient}`}></div>
       <h3>{props.date}</h3>
       <div className={styles.contentContainer}>
-        <div>
+        <div className={`${styles.textContainer} ${showText}`}>
           <h3>{props.title}</h3>
           <p>{props.description}</p>
           <a href={props.url} className={styleA}>
@@ -35,12 +36,14 @@ export default function Activity(props) {
       <PlusSign
         className={styles.plusSign}
         onClick={() => {
-          if (showText == "" && gradient == "") {
+          if (increaseHeight == "" && gradient == "" && showText == "") {
             setShowText(styles.showText);
+            setIncreaseHeight(styles.increaseHeight);
             setGradient(styles.setGradient);
           } else {
-            setGradient("");
             setShowText("");
+            setIncreaseHeight("");
+            setGradient("");
           }
         }}
       />

@@ -33,7 +33,7 @@
 .activity:hover .gradient {
   opacity: 1;
 }
-.activity:hover .contentContainer div {
+.activity:hover .textContainer {
   transform: translateY(0);
   transition: all 0.5s;
 }
@@ -45,7 +45,7 @@
   opacity: 0;
   transition: opacity 0.5s;
 }
-.contentContainer > div {
+.textContainer {
   width: 100%;
   height: 100%;
   transform: translateY(140px);
@@ -84,22 +84,21 @@
   .activity {
     min-width: 100%;
     min-height: 60vh;
-
     transition: min-height 0.5s;
   }
-  .showText {
+  .increaseHeight {
     min-height: 90vh;
     transition: min-height 0.5s;
   }
   .setGradient {
     opacity: 1;
   }
-  .showText .contentContainer > div {
-    transform: translateY(0px);
-    transition: all 0.5s;
+  .textContainer {
+    transform: translateY(280px) !important;
+    transition: all 0.5s ease 0.05s !important;
   }
-  .contentContainer > div {
-    transform: translateY(280px);
-    transition: all 0.5s;
+  .showText {
+    transform: translateY(0px) !important;
+    transition: all 0.5s ease 0.1s !important;
   }
 }
