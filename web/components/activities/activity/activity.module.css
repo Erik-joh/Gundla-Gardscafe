@@ -78,13 +78,18 @@
   .activity > div:last-child {
     display: block;
     position: absolute;
-    bottom: 5px;
-    right: 5px;
+    bottom: 20px;
+    right: 20px;
   }
   .activity {
     min-width: 100%;
     min-height: 60vh;
     transition: min-height 0.5s;
+  }
+  .contentContainer {
+    width: 70%;
+    left: 20px;
+    bottom: 20px;
   }
   .increaseHeight {
     min-height: 90vh;
@@ -93,8 +98,11 @@
   .setGradient {
     opacity: 1;
   }
+  .activity:hover .gradient {
+    opacity: 0;
+  }
   .textContainer {
-    transform: translateY(280px) !important;
+    transform: translateY(240px) !important;
     transition: all 0.5s ease 0.05s !important;
   }
   .showText {
