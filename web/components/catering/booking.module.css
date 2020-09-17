@@ -34,7 +34,7 @@
 
 .form input[type="text"]::placeholder,
 .form input[type="email"]::placeholder {
-  padding-left: 0.3rem;
+  padding-left: 1rem;
   color: #000000;
   opacity: 75%;
 }
@@ -47,7 +47,7 @@
   width: 184px;
   height: 50px;
   cursor: pointer;
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
   align-self: flex-end;
 }
 

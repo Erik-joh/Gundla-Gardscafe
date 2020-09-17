@@ -4,18 +4,8 @@ export default {
   type: "object",
   fields: [
     {
-      name: "slideQuoteOne",
-      title: "Första citatet",
-      type: "string",
-    },
-    {
-      name: "slideQuoteTwo",
-      title: "Andra citatet",
-      type: "string",
-    },
-    {
-      name: "slideQuoteThree",
-      title: "Tredje citatet",
+      name: "slideShowQuote",
+      title: "Citat",
       type: "string",
     },
   ],

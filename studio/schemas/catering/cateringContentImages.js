@@ -4,36 +4,18 @@ export default {
   type: "object",
   fields: [
     {
-      name: "topLeftImage",
-      title: "Innehållsbilder",
-      type: "image",
-      options: {
-        hotspot: true,
-      },
-    },
-    {
-      name: "topRightImage",
-      title: "Innehållsbilder",
-      type: "image",
-      options: {
-        hotspot: true,
-      },
-    },
-    {
-      name: "bottomLeftImage",
-      title: "Innehållsbilder",
-      type: "image",
-      options: {
-        hotspot: true,
-      },
-    },
-    {
-      name: "bottomRightImage",
-      title: "Innehållsbilder",
+      name: "Image",
+      title: "Innehållsbild",
       type: "image",
       options: {
         hotspot: true,
       },
     },
   ],
+  preview: {
+    select: {
+      title: "Bilder",
+      subtitle: "bilder",
+    },
+  },
 };

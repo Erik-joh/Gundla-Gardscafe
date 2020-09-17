@@ -13,8 +13,6 @@ const quoteSwiper = (props) => {
         slidesPerView={3}
         navigation
         pagination={{ clickable: true }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
           <p>{props.quoteOne}</p>

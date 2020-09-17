@@ -9,6 +9,7 @@ import Scrollbar from "../../pages/_app";
 SwiperCore.use([Navigation, Pagination, Scrollbar]);
 
 const imageSwiper = (props) => {
+  console.log(props);
   return (
     <Swiper
       spaceBetween={50}
@@ -16,8 +17,6 @@ const imageSwiper = (props) => {
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide className={styles.slide}>
         <img className={styles.swipe} src={props.imageOne} />

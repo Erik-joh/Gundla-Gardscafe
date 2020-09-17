@@ -3,13 +3,14 @@
   background-color: #efece0;
   background-repeat: no-repeat;
   display: flex;
+  align-items: center;
   flex-direction: column;
   padding: 1rem 2rem 2rem 2rem;
-  height: 320px;
+  height: 33.33%;
   width: auto;
 }
 
-.menu h4 {
+.menu h2 {
   padding: 1.5rem 0;
   margin: 0;
 }
@@ -22,7 +23,7 @@
 .menu img {
   position: absolute;
   width: 180px;
-  left: 55%;
+  left: 60%;
 }
 
 @media only screen and (max-width: 900px) {

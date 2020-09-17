@@ -4,23 +4,7 @@ export default {
   type: "object",
   fields: [
     {
-      name: "slideImageOne",
-      title: "Karusell",
-      type: "image",
-      options: {
-        hotspot: true,
-      },
-    },
-    {
-      name: "slideImageTwo",
-      title: "Karusell",
-      type: "image",
-      options: {
-        hotspot: true,
-      },
-    },
-    {
-      name: "slideImageThree",
+      name: "slideImage",
       title: "Karusell",
       type: "image",
       options: {

@@ -18,27 +18,27 @@ export default function CateringGroup(props) {
       <div className={styles.menuGroup}>
         <Menu
           background={"/appetizerImage.png"}
-          title={props.menu.menuTitleAppetizer}
-          alternativeOne={props.menu.appetizerOne}
-          alternativeTwo={props.menu.appetizerTwo}
-          alternativeThree={props.menu.appetizerThree}
+          menuTitle="FÖRRÄTTER"
+          alternativeOne={props.menu[0].Food}
+          alternativeTwo={props.menu[1].Food}
+          alternativeThree={props.menu[2].Food}
           key={props._key}
         ></Menu>
         <Menu
           background={"/mainCourseImage.png"}
-          title={props.menu.menuTitleMainCourse}
-          alternativeOne={props.menu.mainCourseOne}
-          alternativeTwo={props.menu.mainCourseTwo}
-          alternativeThree={props.menu.mainCourseThree}
+          menuTitle="VARMRÄTTER"
+          alternativeOne={props.menu[3].Food}
+          alternativeTwo={props.menu[4].Food}
+          alternativeThree={props.menu[5].Food}
           key={props._key}
         ></Menu>
 
         <Menu
           background={"/dessertImage.png"}
-          title={props.menu.menuTitleDessert}
-          alternativeOne={props.menu.dessertOne}
-          alternativeTwo={props.menu.dessertTwo}
-          alternativeThree={props.menu.dessertThree}
+          menuTitle="EFTERRÄTTER"
+          alternativeOne={props.menu[6].Food}
+          alternativeTwo={props.menu[7].Food}
+          alternativeThree={props.menu[8].Food}
           key={props._key}
         ></Menu>
       </div>

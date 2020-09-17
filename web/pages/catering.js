@@ -9,6 +9,7 @@ import QuoteSwiper from "../components/catering/quoteSwiper";
 import ImageSwiper from "../components/catering/Swiper";
 
 export default function Catering(props) {
+  console.log(props);
   return (
     <Layout menu={props.menu}>
       <div>
@@ -24,22 +25,15 @@ export default function Catering(props) {
               />
             );
           })}
-
-          {props.catering.contentImages.map((item) => {
-            return (
-              <CateringGroup
-                topLeftImage={item.topLeftImage}
-                menu={props.catering.cateringMenu[0]}
-                topRightImage={item.topRightImage}
-                bottomLeftImage={item.bottomLeftImage}
-                bottomRightImage={item.bottomRightImage}
-                key={item._key}
-              />
-            );
-          })}
-
+          <CateringGroup
+            topLeftImage={props.catering.contentImages[3].Image}
+            menu={props.catering.cateringMenu}
+            topRightImage={props.catering.contentImages[0].Image}
+            bottomLeftImage={props.catering.contentImages[2].Image}
+            bottomRightImage={props.catering.contentImages[1].Image}
+            key={props._key}
+          />
           {props.catering.cateringInfo.map((item) => {
-            console.log(item);
             return (
               <Form
                 telephoneNumber={item.telephoneNumber}
@@ -48,27 +42,22 @@ export default function Catering(props) {
               />
             );
           })}
-          {props.catering.quoteSlideshow.map((item) => {
-            return (
-              <QuoteSwiper
-                quoteOne={item.slideQuoteOne}
-                quoteTwo={item.slideQuoteTwo}
-                quoteThree={item.slideQuoteThree}
-                key={item._key}
-              />
-            );
-          })}
-          {props.catering.imageSlideshow.map((item) => {
-            console.log(item);
-            return (
-              <ImageSwiper
-                imageOne={urlFor(item.slideImageOne).url()}
-                imageTwo={urlFor(item.slideImageTwo).url()}
-                imageThree={urlFor(item.slideImageThree).url()}
-                key={item._key}
-              />
-            );
-          })}
+
+          <QuoteSwiper
+            quoteOne={props.catering.quoteSlideshow[0].slideShowQuote}
+            quoteTwo={props.catering.quoteSlideshow[1].slideShowQuote}
+            quoteThree={props.catering.quoteSlideshow[2].slideShowQuote}
+            key={props._key}
+          />
+
+          <ImageSwiper
+            imageOne={urlFor(props.catering.imageSlideshow[0].slideImage).url()}
+            imageTwo={urlFor(props.catering.imageSlideshow[1].slideImage).url()}
+            imageThree={urlFor(
+              props.catering.imageSlideshow[2].slideImage
+            ).url()}
+            key={props._key}
+          />
         </div>
       </div>
     </Layout>
