@@ -1,33 +1,21 @@
 .group {
-  display: grid;
-  grid-template-columns: 33.3333% 33.3333% 33.3333%;
-  grid-template-rows: 25% 25% 25%;
+  display: flex;
+}
+
+.leftGroup,
+.rightGroup,
+.menuGroup {
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+}
+
+.bottomLeftImage,
+.topRightImage {
+  height: 35%;
 }
 
 .topLeftImage,
-.bottomLeftImage,
-.topRightImage,
 .bottomRightImage {
-  width: 100%;
-}
-
-.bottomLeftImage {
-  grid-column-start: 1;
-}
-
-.bottomRightImage {
-  grid-column-start: 3;
-  grid-row-start: 2;
-}
-
-.leftGroup {
-  display: flex;
-  flex-direction: column;
-  grid-column-start: 1;
-  grid-row-start: 1;
-}
-
-.rightGroup {
-  display: flex;
-  flex-direction: column;
+  height: 65%;
 }

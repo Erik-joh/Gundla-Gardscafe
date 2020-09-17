@@ -3,6 +3,7 @@ import styles from "./cateringGroup.module.css";
 import Menu from "./menu";
 
 export default function CateringGroup(props) {
+  console.log(props);
   return (
     <div className={styles.group}>
       <div className={styles.leftGroup}>

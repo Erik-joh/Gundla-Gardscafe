@@ -33,12 +33,16 @@
 }
 
 @media only screen and (max-device-width: 900px) {
-  .headerImage img {
+  .headerImage > img {
     width: 100%;
+    display: block;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    z-index: -1;
   }
 
   .headerImage {
-    width: 300%;
-    height: 362px;
+    width: 100%;
   }
 }
