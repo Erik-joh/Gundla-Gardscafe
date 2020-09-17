@@ -1,9 +1,6 @@
 .plusSign {
-  position: absolute;
   width: 30px;
   height: 30px;
-  bottom: 5px;
-  right: 5px;
   transform-origin: 50% 50%;
   transform: rotate(0deg);
   transition: all 0.5s;

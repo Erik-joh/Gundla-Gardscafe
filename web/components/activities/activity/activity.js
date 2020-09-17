@@ -6,7 +6,8 @@ import React, { useState } from "react";
 export default function Activity(props) {
   var linkText;
   var styleA;
-  const [show, setShow] = useState("");
+  const [showText, setShowText] = useState("");
+  const [gradient, setGradient] = useState("");
   if (props.url) {
     linkText = "Köp Biljett";
     styleA = styles.buy;
@@ -16,11 +17,11 @@ export default function Activity(props) {
   }
   return (
     <div
-      className={`${styles.activity} ${show}`}
+      className={`${styles.activity} ${showText}`}
       style={{ width: props.width }}
     >
       <img src={urlFor(props.image).url()} />
-      <div className={styles.gradient}></div>
+      <div className={`${styles.gradient} ${gradient}`}></div>
       <h3>{props.date}</h3>
       <div className={styles.contentContainer}>
         <div>
@@ -34,10 +35,12 @@ export default function Activity(props) {
       <PlusSign
         className={styles.plusSign}
         onClick={() => {
-          if (show == "") {
-            setShow(styles.show);
+          if (showText == "" && gradient == "") {
+            setShowText(styles.showText);
+            setGradient(styles.setGradient);
           } else {
-            setShow("");
+            setGradient("");
+            setShowText("");
           }
         }}
       />
