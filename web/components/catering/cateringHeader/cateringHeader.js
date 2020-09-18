@@ -1,4 +1,4 @@
-import urlFor from "../../imageBuilder";
+import urlFor from "../../../imageBuilder";
 import styles from "./cateringHeader.module.css";
 
 export default function CateringHeader(props) {

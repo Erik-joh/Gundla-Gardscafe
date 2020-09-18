@@ -42,7 +42,6 @@
 .submitButton {
   border: 0;
   background: #6f6860;
-  opacity: 50%;
   color: white;
   width: 184px;
   height: 50px;
@@ -54,10 +53,6 @@
 .form input[type="text"]:nth-last-child(2) {
   width: 942px;
   height: 100px;
-}
-
-.form input[type="text"]:nth-last-child(2)::placeholder {
-  text-align: justify;
 }
 
 .last {
@@ -76,33 +71,49 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .form {
-    width: 200%;
-  }
-
-  .text {
-    padding: 3rem 0 3rem 0rem;
-  }
-
-  .text h2 {
-    padding-bottom: 1rem;
-  }
-
   .group {
-    display: block;
-    padding-left: 5rem;
+    flex-direction: column;
+  }
+
+  .form input[type="text"],
+  .form input[type="email"] {
+    background-color: #dfdbca;
+    opacity: 60%;
+    width: 335px;
+    height: 48px;
+    border: none;
   }
 
   .form input[type="text"]:nth-last-child(2) {
-    width: 458px;
+    width: 335px;
     height: 185px;
   }
 
-  .last {
-    padding-left: 5rem;
+  .form input[type="text"]::placeholder,
+  .form input[type="email"]::placeholder {
+    padding-left: 0.5rem;
   }
 
   .submitButton {
-    width: 458px;
+    width: 335px;
+    align-self: center;
+  }
+
+  .last {
+    align-items: center;
+  }
+
+  .last label {
+    align-self: flex-start;
+    padding-left: 0.3rem;
+  }
+
+  .text p {
+    text-align: center;
+  }
+
+  .textInfo {
+    align-items: center;
+    flex-direction: column;
   }
 }

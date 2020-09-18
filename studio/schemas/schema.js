@@ -27,6 +27,8 @@ import socialmedia from "./menu/socialmedia";
 import cateringInfo from "./catering/cateringInfo";
 import activities from "./activities/activities";
 import activity from "./activities/activity";
+import organizer from "./organizer/organizer";
+import organizerHeader from "./organizer/organizerHeader";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -44,6 +46,7 @@ export default createSchema({
     frontpage,
     activities,
     menu,
+    organizer,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     menuLink,
@@ -56,6 +59,7 @@ export default createSchema({
     cateringMenu,
     cateringContentImages,
     cateringInfo,
+    organizerHeader,
     activity,
     blockContent,
     plotSummary,

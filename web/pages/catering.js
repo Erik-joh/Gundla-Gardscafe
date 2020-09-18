@@ -2,14 +2,13 @@ import styles from "../styles/catering.module.css";
 import client from "../client";
 import urlFor from "../imageBuilder";
 import Layout from "../components/layout";
-import CateringGroup from "../components/catering/cateringGroup";
-import CateringHeader from "../components/catering/cateringHeader";
-import Form from "../components/catering/booking";
-import QuoteSwiper from "../components/catering/quoteSwiper";
-import ImageSwiper from "../components/catering/Swiper";
+import CateringGroup from "../components/catering/cateringGroup/cateringGroup";
+import CateringHeader from "../components/catering/cateringHeader/cateringHeader";
+import Form from "../components/catering/booking/booking";
+import QuoteSwiper from "../components/catering/quoteSwiper/quoteSwiper";
+import ImageSwiper from "../components/catering/imageSwiper/Swiper";
 
 export default function Catering(props) {
-  console.log(props);
   return (
     <Layout menu={props.menu}>
       <div>
@@ -36,6 +35,7 @@ export default function Catering(props) {
           {props.catering.cateringInfo.map((item) => {
             return (
               <Form
+                title={"bokningsförfågan catering"}
                 telephoneNumber={item.telephoneNumber}
                 email={item.email}
                 key={item._key}

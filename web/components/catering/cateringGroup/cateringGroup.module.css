@@ -1,0 +1,38 @@
+.group {
+  display: flex;
+}
+
+.leftGroup,
+.rightGroup,
+.menuGroup {
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+}
+
+.bottomLeftImage,
+.topRightImage {
+  height: 30%;
+}
+
+.topLeftImage,
+.bottomRightImage {
+  height: 70%;
+}
+
+@media only screen and (max-width: 900px) {
+  .group {
+    display: block;
+  }
+
+  .topLeftImage,
+  .bottomLeftImage,
+  .topRightImage,
+  .bottomRightImage {
+    width: 300%;
+  }
+
+  .leftGroup {
+    display: block;
+  }
+}

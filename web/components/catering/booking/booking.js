@@ -19,7 +19,7 @@ export default class Form extends React.Component {
           method="POST"
         >
           <div className={styles.text}>
-            <h2>bokningsförfågan catering</h2>
+            <h2>{this.props.title}</h2>
             <p>
               Varmt välkommen att höra av er till oss. Er förfrågan är inte
               bindande.

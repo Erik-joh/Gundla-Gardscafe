@@ -2,14 +2,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
 import styles from "./swiper.module.css";
-import Navigation from "../../pages/_app";
-import Pagination from "../../pages/_app";
-import Scrollbar from "../../pages/_app";
+import Navigation from "../../../pages/_app";
+import Pagination from "../../../pages/_app";
+import Scrollbar from "../../../pages/_app";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar]);
 
 const imageSwiper = (props) => {
-  console.log(props);
   return (
     <Swiper
       spaceBetween={50}

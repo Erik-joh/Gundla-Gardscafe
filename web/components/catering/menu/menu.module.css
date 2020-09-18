@@ -11,31 +11,28 @@
   width: auto;
 }
 
-.menu h2 {
+.menu h4 {
   padding: 1.5rem 0rem;
   margin: 0;
 }
 
 .menu p {
-  padding: 1rem 5.5rem;
+  padding: 1rem 3rem;
   margin: 0;
 }
 
 .menu img {
   position: absolute;
   width: 180px;
-  left: 60%;
+  left: 55%;
 }
 
 @media only screen and (max-width: 900px) {
   .menu {
-    padding: 1rem 0 1rem 2rem;
-    height: 100%;
-    justify-content: center;
+    width: 300%;
   }
 
   .menu img {
-    left: 140%;
-    width: 150px;
+    left: 50%;
   }
 }

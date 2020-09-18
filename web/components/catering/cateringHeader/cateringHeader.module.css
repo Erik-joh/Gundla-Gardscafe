@@ -9,7 +9,6 @@
 .header h1 {
   position: absolute;
   color: white;
-  padding: 15rem 10rem 0 0;
 }
 
 .headerImage {
@@ -18,6 +17,7 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
+  align-items: center;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
 
@@ -34,7 +34,8 @@
 
 @media only screen and (max-device-width: 900px) {
   .headerImage > img {
-    width: 100%;
+    width: auto;
+    height: 60vh;
     display: block;
     display: flex;
     justify-items: center;
@@ -44,5 +45,10 @@
 
   .headerImage {
     width: 100%;
+  }
+
+  .text {
+    padding: 0 1rem 2rem 1rem;
+    text-align: center;
   }
 }

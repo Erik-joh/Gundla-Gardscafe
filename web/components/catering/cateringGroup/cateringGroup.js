@@ -1,6 +1,6 @@
-import urlFor from "../../imageBuilder";
+import urlFor from "../../../imageBuilder";
 import styles from "./cateringGroup.module.css";
-import Menu from "./menu";
+import Menu from "../menu/menu";
 
 export default function CateringGroup(props) {
   console.log(props);

@@ -1,0 +1,17 @@
+.organizerWrapper {
+  padding-left: 10%;
+}
+
+.organizerHeader {
+  background-color: #efece0;
+}
+
+.organizerHeader p {
+  padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .organizerWrapper {
+    padding: 0;
+  }
+}
