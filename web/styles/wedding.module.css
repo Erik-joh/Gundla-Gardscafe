@@ -1,0 +1,11 @@
+.weddingWrapper {
+  padding-left: 10%;
+}
+
+.weddingMenu {
+  display: flex;
+}
+
+.weddingMenu img {
+  left: auto !important;
+}

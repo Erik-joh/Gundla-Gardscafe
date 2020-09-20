@@ -1,6 +1,6 @@
 export default {
-  name: "organizer",
-  title: "Arrangör",
+  name: "wedding",
+  title: "Bröllop & fest",
   type: "document",
   fields: [
     {
@@ -10,16 +10,16 @@ export default {
       description: 'Please use "Firstname Lastname" format',
     },
     {
-      name: "organizerHeader",
+      name: "weddingHeader",
       title: "Titelinformation",
       type: "array",
-      of: [{ type: "organizerHeader" }],
+      of: [{ type: "weddingHeader" }],
     },
     {
-      name: "organizerInfo",
-      title: "Information",
+      name: "weddingQuestions",
+      title: "Frågor om bröllop",
       type: "array",
-      of: [{ type: "cateringInfo" }],
+      of: [{ type: "weddingQuestions" }],
     },
   ],
 };
