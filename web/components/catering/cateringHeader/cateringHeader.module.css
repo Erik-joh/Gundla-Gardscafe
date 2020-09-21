@@ -36,11 +36,9 @@
   .headerImage > img {
     width: auto;
     height: 60vh;
-    display: block;
     display: flex;
     justify-items: center;
     justify-content: center;
-    z-index: -1;
   }
 
   .headerImage {

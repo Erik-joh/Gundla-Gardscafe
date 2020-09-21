@@ -13,6 +13,7 @@ const quoteSwiper = (props) => {
         spaceBetween={50}
         slidesPerView={1}
         navigation
+        loop
         pagination={{ clickable: true }}
       >
         <SwiperSlide>

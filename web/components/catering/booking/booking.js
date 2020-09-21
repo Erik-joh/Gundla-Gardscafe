@@ -35,13 +35,21 @@ export default class Form extends React.Component {
               <label>
                 <h4>För- och efternamn</h4>
               </label>
-              <input type="text" name="name" placeholder="För- och efternamn" />
+              <textarea
+                type="text"
+                name="name"
+                placeholder="För- och efternamn"
+              />
             </div>
             <div className={styles.order}>
               <label>
                 <h4>Mailadress</h4>
               </label>
-              <input type="email" name="email" placeholder="exempel@mail.se" />
+              <textarea
+                type="email"
+                name="email"
+                placeholder="exempel@mail.se"
+              />
             </div>
           </div>
           <div className={styles.group}>
@@ -49,24 +57,28 @@ export default class Form extends React.Component {
               <label>
                 <h4>Planerat antal gäster</h4>
               </label>
-              <input type="text" name="guests" placeholder="0-100" />
+              <textarea type="text" name="guests" placeholder="0-100" />
             </div>
             <div className={styles.order}>
               <label>
                 <h4>Önskat datum</h4>
               </label>
-              <input type="text" name="date" placeholder="2020/10/11"></input>
+              <textarea
+                type="text"
+                name="date"
+                placeholder="2020/10/11"
+              ></textarea>
             </div>
           </div>
           <div className={styles.last}>
             <label>
               <h4>Typ av tillställningen och önskemål</h4>
             </label>
-            <input
+            <textarea
               maxLength="500"
               type="text"
               name="type of party"
-              placeholder="Ska cateringen t.ex. anpassas efter en företagskonferens eller ett studentfirande? Önskar ni servera buffé eller upplagd tallrik?"
+              placeholder={this.props.placeholder}
             />
             {status === "SUCCESS" ? (
               <p>Tack! Eran bokningsförfrågan har skickats.</p>

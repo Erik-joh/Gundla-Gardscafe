@@ -15,6 +15,7 @@ const imageSwiper = (props) => {
         spaceBetween={120}
         slidesPerView={1.5}
         navigation
+        loop
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
       >

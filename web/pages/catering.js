@@ -38,6 +38,9 @@ export default function Catering(props) {
                 title={"bokningsförfågan catering"}
                 telephoneNumber={item.telephoneNumber}
                 email={item.email}
+                placeholder={
+                  "Ska cateringen t.ex. anpassas efter en företagskonferens eller ett studentfirande? Önskar ni servera buffé eller upplagd tallrik?"
+                }
                 key={item._key}
               />
             );

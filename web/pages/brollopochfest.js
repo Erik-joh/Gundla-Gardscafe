@@ -85,6 +85,9 @@ export default function Wedding(props) {
                 title={"bokningsförfågan bröllop & fest"}
                 telephoneNumber={item.telephoneNumber}
                 email={item.email}
+                placeholder={
+                  "Tänker ni exempelvis fira bröllop eller att någon fyller jämnt? Om det gäller bröllop, vill ni ha vigseln på Gundla gård? När vill Ni anlända? "
+                }
                 key={item._key}
               />
             );
