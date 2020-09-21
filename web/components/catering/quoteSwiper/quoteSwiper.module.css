@@ -1,7 +1,23 @@
 .div {
-  height: 336px;
   background-color: #efece0;
-  display: flex;
-  align-items: center;
   padding: 0 5rem;
+  text-align: center;
+}
+
+.div p {
+  padding: 0 15rem 5rem 15rem;
+}
+
+.div img {
+  padding: 3rem 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .div p {
+    padding: 0 5rem 3rem 5rem;
+  }
+
+  .div {
+    padding: 0;
+  }
 }

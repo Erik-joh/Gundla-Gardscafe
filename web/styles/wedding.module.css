@@ -9,3 +9,39 @@
 .weddingMenu img {
   left: auto !important;
 }
+
+.weddingMenu div {
+  height: auto;
+}
+
+.weddingHeader {
+  background-color: #fffdf8;
+}
+
+@media only screen and (max-width: 900px) {
+  .weddingWrapper {
+    padding: 0;
+  }
+
+  .weddingMenu {
+    flex-direction: column;
+  }
+
+  .weddingMenu div {
+    width: auto;
+    align-items: flex-start;
+  }
+
+  .weddingMenu > div > p {
+    padding: 0 0 1rem 0;
+  }
+
+  .weddingMenu img {
+    left: 45% !important;
+  }
+
+  .weddingForm h2 {
+    padding: 0 2rem 0.5rem 2rem;
+    text-align: center;
+  }
+}

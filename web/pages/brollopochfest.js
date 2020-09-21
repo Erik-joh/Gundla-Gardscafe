@@ -52,30 +52,32 @@ export default function Wedding(props) {
             key={props._key}
           />
         </div>
-        <WeddingInfoSection
-          imageLeft={props.wedding.weddingQuestions[3].Images.image}
-          imageRight={props.wedding.weddingQuestions[4].Images.image}
-          title={props.wedding.weddingQuestions[0].Title}
-          questionOne={props.wedding.weddingQuestions[0].weddingQuestion}
-          answerOne={props.wedding.weddingQuestions[0].weddingAnswer}
-          questionTwo={props.wedding.weddingQuestions[1].weddingQuestion}
-          answerTwo={props.wedding.weddingQuestions[1].weddingAnswer}
-          questionThree={props.wedding.weddingQuestions[2].weddingQuestion}
-          answerThree={props.wedding.weddingQuestions[2].weddingAnswer}
-          titleFacilities={props.wedding.weddingQuestions[5].Title}
-          facilityOne={props.wedding.weddingQuestions[5].weddingFacilities}
-          infoOne={props.wedding.weddingQuestions[5].weddingFacilitiesInfo}
-          infoTwo={props.wedding.weddingQuestions[6].weddingFacilitiesInfo}
-          infoThree={props.wedding.weddingQuestions[7].weddingFacilitiesInfo}
-          infoFour={props.wedding.weddingQuestions[8].weddingFacilitiesInfo}
-          facilityTwo={props.wedding.weddingQuestions[9].weddingFacilities}
-          infoFive={props.wedding.weddingQuestions[9].weddingFacilitiesInfo}
-          infoSix={props.wedding.weddingQuestions[10].weddingFacilitiesInfo}
-          facilityThree={props.wedding.weddingQuestions[11].weddingFacilities}
-          infoSeven={props.wedding.weddingQuestions[11].weddingFacilitiesInfo}
-          infoEight={props.wedding.weddingQuestions[12].weddingFacilitiesInfo}
-          key={props._key}
-        />
+        <div className={styles.infoSection}>
+          <WeddingInfoSection
+            imageLeft={urlFor(props.wedding.weddingQuestions[3].Images).url()}
+            imageRight={urlFor(props.wedding.weddingQuestions[4].Images).url()}
+            title={props.wedding.weddingQuestions[0].Title}
+            questionOne={props.wedding.weddingQuestions[0].weddingQuestion}
+            answerOne={props.wedding.weddingQuestions[0].weddingAnswer}
+            questionTwo={props.wedding.weddingQuestions[1].weddingQuestion}
+            answerTwo={props.wedding.weddingQuestions[1].weddingAnswer}
+            questionThree={props.wedding.weddingQuestions[2].weddingQuestion}
+            answerThree={props.wedding.weddingQuestions[2].weddingAnswer}
+            titleFacilities={props.wedding.weddingQuestions[5].Title}
+            facilityOne={props.wedding.weddingQuestions[5].weddingFacilities}
+            infoOne={props.wedding.weddingQuestions[5].weddingFacilitiesInfo}
+            infoTwo={props.wedding.weddingQuestions[6].weddingFacilitiesInfo}
+            infoThree={props.wedding.weddingQuestions[7].weddingFacilitiesInfo}
+            infoFour={props.wedding.weddingQuestions[8].weddingFacilitiesInfo}
+            facilityTwo={props.wedding.weddingQuestions[9].weddingFacilities}
+            infoFive={props.wedding.weddingQuestions[9].weddingFacilitiesInfo}
+            infoSix={props.wedding.weddingQuestions[10].weddingFacilitiesInfo}
+            facilityThree={props.wedding.weddingQuestions[11].weddingFacilities}
+            infoSeven={props.wedding.weddingQuestions[11].weddingFacilitiesInfo}
+            infoEight={props.wedding.weddingQuestions[12].weddingFacilitiesInfo}
+            key={props._key}
+          />
+        </div>
         <div className={styles.weddingForm}>
           {props.catering.cateringInfo.map((item) => {
             return (

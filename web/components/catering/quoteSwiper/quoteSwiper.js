@@ -8,9 +8,10 @@ SwiperCore.use([Navigation, Pagination]);
 const quoteSwiper = (props) => {
   return (
     <div className={styles.div}>
+      <img src="quote.png"></img>
       <Swiper
         spaceBetween={50}
-        slidesPerView={3}
+        slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
       >

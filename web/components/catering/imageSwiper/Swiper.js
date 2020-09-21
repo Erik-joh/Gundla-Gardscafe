@@ -10,23 +10,25 @@ SwiperCore.use([Navigation, Pagination, Scrollbar]);
 
 const imageSwiper = (props) => {
   return (
-    <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
-      navigation
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-    >
-      <SwiperSlide className={styles.slide}>
-        <img className={styles.swipe} src={props.imageOne} />
-      </SwiperSlide>
-      <SwiperSlide className={styles.slide}>
-        <img className={styles.swipe} src={props.imageTwo} />
-      </SwiperSlide>
-      <SwiperSlide className={styles.slide}>
-        <img className={styles.swipe} src={props.imageThree} />
-      </SwiperSlide>
-    </Swiper>
+    <div className={styles.div}>
+      <Swiper
+        spaceBetween={120}
+        slidesPerView={1.5}
+        navigation
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+      >
+        <SwiperSlide className={styles.slide}>
+          <img className={styles.swipe} src={props.imageTwo} />
+        </SwiperSlide>
+        <SwiperSlide className={styles.slide}>
+          <img className={styles.swipe} src={props.imageOne} />
+        </SwiperSlide>
+        <SwiperSlide className={styles.slide}>
+          <img className={styles.swipe} src={props.imageThree} />
+        </SwiperSlide>
+      </Swiper>
+    </div>
   );
 };
 

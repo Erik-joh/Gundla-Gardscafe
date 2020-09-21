@@ -1,0 +1,105 @@
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  display: flex;
+}
+
+.qna {
+  background-color: #efece0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+
+.qna p:last-of-type,
+.facilities p:last-of-type {
+  padding-bottom: 8%;
+}
+
+.qna p {
+  padding: 0 15rem;
+}
+
+.facilities {
+  background-color: #2d231e;
+  color: white;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qna h4,
+.facilities h4 {
+  padding: 2rem 0;
+}
+
+.qna h2,
+.facilities h2 {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.infoImages {
+  display: flex;
+}
+
+.leftImage {
+  width: 35%;
+}
+
+.rightImage {
+  width: 65%;
+}
+
+@media only screen and (max-width: 900px) {
+  .infoImages img,
+  .qna,
+  .facilities {
+    width: 100%;
+  }
+
+  .infoImages {
+    flex-direction: column-reverse;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .qna,
+  .facilities {
+    align-items: flex-start;
+  }
+
+  .qna h2,
+  .facilities h2 {
+    align-self: center;
+    padding-top: 3rem;
+  }
+
+  .qna h4 {
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .qna p {
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .facilities h4 {
+    padding: 1rem 1rem 0.5rem 1rem;
+  }
+
+  .facilities p {
+    padding: 0 0 0 1rem;
+  }
+
+  .qna p:last-of-type,
+  .facilities p:last-of-type {
+    padding-bottom: 4rem;
+  }
+}
