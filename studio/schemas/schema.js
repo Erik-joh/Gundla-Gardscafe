@@ -35,7 +35,7 @@ import weddingQuestions from "./wedding/weddingQuestions";
 import about from "./about/about";
 import imageBlock from "./about/imageBlock";
 import textBlock from "./about/textBlock";
-import aboutHeader from "./about/whoAreWe";
+import aboutHeader from "./about/aboutHeader";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({

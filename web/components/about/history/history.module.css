@@ -1,0 +1,11 @@
+.history {
+  width: 60%;
+  margin: 20px 0px;
+}
+@media only screen and (max-width: 900px) {
+  .history {
+    width: 85%;
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+}
