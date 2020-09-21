@@ -66,7 +66,7 @@ export default class Form extends React.Component {
               <textarea
                 type="text"
                 name="date"
-                placeholder="2020/10/11"
+                placeholder={this.props.placeholderDate}
               ></textarea>
             </div>
           </div>

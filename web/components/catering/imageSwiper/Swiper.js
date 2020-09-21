@@ -12,8 +12,8 @@ const imageSwiper = (props) => {
   return (
     <div className={styles.div}>
       <Swiper
-        spaceBetween={120}
-        slidesPerView={1.5}
+        spaceBetween={110}
+        slidesPerView={1.4}
         navigation
         loop
         pagination={{ clickable: true }}

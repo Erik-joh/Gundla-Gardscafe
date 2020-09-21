@@ -38,6 +38,7 @@ export default function Catering(props) {
                 title={"bokningsförfågan catering"}
                 telephoneNumber={item.telephoneNumber}
                 email={item.email}
+                placeholderDate={"2020/10/11"}
                 placeholder={
                   "Ska cateringen t.ex. anpassas efter en företagskonferens eller ett studentfirande? Önskar ni servera buffé eller upplagd tallrik?"
                 }

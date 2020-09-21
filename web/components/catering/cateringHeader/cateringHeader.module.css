@@ -35,7 +35,7 @@
 @media only screen and (max-device-width: 900px) {
   .headerImage > img {
     width: auto;
-    height: 60vh;
+    height: 50vh;
     display: flex;
     justify-items: center;
     justify-content: center;
