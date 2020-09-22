@@ -18,6 +18,16 @@
     height: 2px;
     width: 24px;
   }
+  .hamburger .gradient {
+    position: fixed;
+    top: -10px;
+    left: -12px;
+    width: 48px;
+    height: 40px;
+    background: rgba(110, 60, 0, 0.2);
+    filter: blur(15px);
+    z-index: 49px;
+  }
   .top {
     top: 0px;
     background-color: white;
