@@ -1,6 +1,5 @@
 .activities {
-  width: 90%;
-  margin-left: 10%;
+  margin-left: 231px;
   display: flex;
   flex-wrap: wrap;
 }
