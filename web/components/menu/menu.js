@@ -36,7 +36,7 @@ export default function Menu(props) {
           {props.menuTitleText.map((item) => {
             return (
               <div key={item._key}>
-                <h3>{item.titel}</h3>
+                <h4>{item.titel}</h4>
                 <pre>{item.paragraph}</pre>
               </div>
             );
