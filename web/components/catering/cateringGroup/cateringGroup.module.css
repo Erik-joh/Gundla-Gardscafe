@@ -1,5 +1,6 @@
 .group {
   display: flex;
+  height: auto;
 }
 
 .leftGroup,
@@ -12,12 +13,12 @@
 
 .bottomLeftImage,
 .topRightImage {
-  height: 30%;
+  height: 20%;
 }
 
 .topLeftImage,
 .bottomRightImage {
-  height: 70%;
+  height: 53.9%;
 }
 
 @media only screen and (max-width: 900px) {

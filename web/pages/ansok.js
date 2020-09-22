@@ -28,6 +28,10 @@ export default function Organizer(props) {
                 title={"arrangörsförfrågan"}
                 telephoneNumber={item.telephoneNumber}
                 email={item.email}
+                placeholder={
+                  "Vad är det för typ av arrangemang? Vad behöver du av oss? Hur lång tid tar det? Tidigare erfarenheter?"
+                }
+                placeholderDate={"2020/10/11"}
                 key={item._key}
               />
             );

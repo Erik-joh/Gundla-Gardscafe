@@ -7,17 +7,18 @@
   justify-content: center;
   flex-direction: column;
   padding: 1rem 2rem 2rem 2rem;
-  height: 33.33%;
+  height: auto;
   width: auto;
+  text-align: center;
 }
 
 .menu h4 {
-  padding: 1.5rem 0rem;
+  padding: 1rem 0rem;
   margin: 0;
 }
 
 .menu p {
-  padding: 1rem 3rem;
+  padding: 0.5rem 1rem;
   margin: 0;
 }
 
