@@ -19,7 +19,7 @@ export default {
       options: {
         sortable: false,
       },
-      validation: (Rule) => Rule.length(8),
+      validation: (Rule) => Rule.length(7),
     },
     {
       name: "menuTitleText",

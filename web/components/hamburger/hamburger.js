@@ -29,6 +29,7 @@ export default function Hamburger(props) {
         setAnim(!anim);
       }}
     >
+      <div className={styles.gradient} />
       <div className={`${styles.top} ${animTop}`} />
       <div className={`${styles.mid} ${animMid}`} />
       <div className={`${styles.bot} ${animBot}`} />
