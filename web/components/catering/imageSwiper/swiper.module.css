@@ -6,4 +6,8 @@
   .swipe {
     width: 200%;
   }
+
+  .div {
+    padding: 0;
+  }
 }

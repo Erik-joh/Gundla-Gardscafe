@@ -1,3 +1,12 @@
 .directionsWrapper {
-  padding-left: 10%;
+  padding-left: 231px;
+  display: flex;
+}
+
+.directionsInfo {
+  width: 40%;
+}
+
+.directionsImage {
+  width: 60%;
 }
