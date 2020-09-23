@@ -8,6 +8,7 @@ import TextSplit from "../textSplit/textSplit";
 export default function Menu(props) {
   const [show, setShow] = useState("");
   const [anim, setAnim] = useState(false);
+
   useEffect(() => {
     if (anim) {
       setShow(styles.show);
@@ -41,7 +42,6 @@ export default function Menu(props) {
         </nav>
         <div className={styles.titelTextContainer}>
           {props.menuTitleText.map((item) => {
-            console.log(item);
             return (
               <div key={item._key}>
                 <h4>{item.titel}</h4>
@@ -62,8 +62,14 @@ export default function Menu(props) {
         </div>
         <nav className={styles.bottomNav}>
           {props.menuBottomLinks.map((item) => {
+            var slug;
+            if (item.slug) {
+              slug = item.slug.current;
+            } else {
+              slug = "";
+            }
             return (
-              <Link href={item.slug.current} key={item._key}>
+              <Link href={slug} key={item._key}>
                 <a>{item.link}</a>
               </Link>
             );

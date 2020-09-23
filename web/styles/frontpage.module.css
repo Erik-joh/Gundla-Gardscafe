@@ -13,14 +13,20 @@
   color: white;
   z-index: 2;
 }
+
 .blockContainer > :nth-child(2) {
-  background-color: #a9a09c;
+  background-color: #2d231e;
+  color: white;
 }
 .blockContainer > :nth-child(3) {
-  background-color: #e4dfce;
+  background-color: #efece0;
+}
+.blockContainer > :nth-child(6) {
+  background-color: #efece0;
 }
 .blockContainer > :nth-child(7) {
-  background-color: #e4dfce;
+  background-color: #2d231e;
+  color: white;
 }
 @media only screen and (max-width: 900px) {
   .frontpage {
