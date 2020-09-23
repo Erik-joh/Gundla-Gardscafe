@@ -14,6 +14,11 @@ export default {
       type: "image",
     },
     {
+      name: "alt",
+      title: "Bildbeskrivning",
+      type: "string",
+    },
+    {
       name: "subTitle",
       title: "Underrubrik",
       type: "string",

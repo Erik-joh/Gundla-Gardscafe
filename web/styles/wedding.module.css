@@ -2,6 +2,10 @@
   padding-left: 231px;
 }
 
+.weddingHeader p:first-of-type {
+  padding-bottom: 1rem;
+}
+
 .weddingMenu {
   display: flex;
 }
@@ -12,6 +16,10 @@
 
 .weddingMenu div {
   height: auto;
+}
+
+.weddingMenu > div {
+  padding: 3rem 0;
 }
 
 .weddingHeader {

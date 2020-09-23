@@ -1,39 +1,74 @@
 .group {
   display: flex;
-  height: 100%;
 }
 
 .leftGroup,
-.rightGroup,
+.rightGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.leftGroup {
+  width: 33.33%;
+}
+
+.rightGroup {
+  width: 33.33%;
+}
+
+.rightGroup {
+  overflow: hidden;
+}
+
 .menuGroup {
   display: flex;
   flex-direction: column;
   width: 33.33%;
 }
 
-.bottomLeftImage,
-.topRightImage {
+.leftGroup > picture {
   width: 100%;
 }
 
-.topLeftImage,
-.bottomRightImage {
+.rightGroup > picture {
   width: 100%;
 }
 
-@media only screen and (max-width: 900px) {
+.leftGroup > picture > img {
+  height: 100%;
+}
+
+.rightGroup > picture > img {
+  height: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
   .group {
     display: block;
   }
 
-  .topLeftImage,
-  .bottomLeftImage,
-  .topRightImage,
-  .bottomRightImage {
-    width: 300%;
+  .leftGroup,
+  .rightGroup {
+    width: 100%;
   }
 
-  .bottomLeftImage {
-    border: none;
+  .leftGroup > picture {
+    margin: -2px 0;
+    width: 100%;
+  }
+
+  .leftGroup > picture > img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .rightGroup > picture {
+    margin: -2px 0;
+    width: 100%;
+  }
+
+  .rightGroup > picture > img {
+    height: 100%;
+    width: 100%;
   }
 }

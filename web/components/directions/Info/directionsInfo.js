@@ -1,4 +1,5 @@
 import styles from "./directionsInfo.module.css";
+import TextSplit from "../../textSplit/textSplit";
 
 export default function DirectionsInfo(props) {
   {
@@ -8,7 +9,7 @@ export default function DirectionsInfo(props) {
           <img src={props.image}></img>
           <h2>{props.title}</h2>
           <p>{props.subTitle}</p>
-          <p>{props.info}</p>
+          <TextSplit string={props.info} />
         </div>
         <div className={styles.iframe}>
           <iframe

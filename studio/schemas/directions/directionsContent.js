@@ -12,6 +12,11 @@ export default {
       },
     },
     {
+      name: "alt",
+      title: "Bildbeskrivning",
+      type: "string",
+    },
+    {
       name: "title",
       title: "Titel",
       type: "string",

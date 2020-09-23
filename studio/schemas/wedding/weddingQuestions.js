@@ -33,5 +33,10 @@ export default {
       title: "Bilder",
       type: "image",
     },
+    {
+      name: "alt",
+      title: "Bildbeskrivning",
+      type: "string",
+    },
   ],
 };

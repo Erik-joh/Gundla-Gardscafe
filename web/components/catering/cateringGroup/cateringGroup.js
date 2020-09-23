@@ -1,18 +1,18 @@
-import urlFor from "../../../imageBuilder";
 import styles from "./cateringGroup.module.css";
 import Menu from "../menu/menu";
+import RespPicture from "../../respPicture/respPicture";
 
 export default function CateringGroup(props) {
+  console.log(props);
+
   return (
     <div className={styles.group}>
       <div className={styles.leftGroup}>
-        <img
-          className={styles.topLeftImage}
-          src={urlFor(props.topLeftImage).url()}
-        />
-        <img
-          className={styles.bottomLeftImage}
-          src={urlFor(props.bottomLeftImage).url()}
+        <RespPicture image={props.topLeftImage} alt={props.alt} width={0.285} />
+        <RespPicture
+          image={props.bottomLeftImage}
+          alt={props.alt}
+          width={0.285}
         />
       </div>
       <div className={styles.menuGroup}>
@@ -43,13 +43,15 @@ export default function CateringGroup(props) {
         ></Menu>
       </div>
       <div className={styles.rightGroup}>
-        <img
-          className={styles.topRightImage}
-          src={urlFor(props.topRightImage).url()}
+        <RespPicture
+          image={props.topRightImage}
+          alt={props.alt}
+          width={0.285}
         />
-        <img
-          className={styles.bottomRightImage}
-          src={urlFor(props.bottomRightImage).url()}
+        <RespPicture
+          image={props.bottomRightImage}
+          alt={props.alt}
+          width={0.285}
         />
       </div>
     </div>

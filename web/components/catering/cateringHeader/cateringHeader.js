@@ -1,5 +1,6 @@
 import urlFor from "../../../imageBuilder";
 import styles from "./cateringHeader.module.css";
+import TextSplit from "../../textSplit/textSplit";
 
 export default function CateringHeader(props) {
   if (props.image) {
@@ -14,7 +15,7 @@ export default function CateringHeader(props) {
       </div>
       <div className={styles.text}>
         <h2>{props.subTitle}</h2>
-        <p>{props.description}</p>
+        <TextSplit string={props.description} />
       </div>
     </div>
   );

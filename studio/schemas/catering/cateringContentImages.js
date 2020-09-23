@@ -16,11 +16,10 @@ export default {
         hotspot: true,
       },
     },
-  ],
-  preview: {
-    select: {
-      title: "Bilder",
-      subtitle: "bilder",
+    {
+      name: "alt",
+      title: "Bildbeskrivning",
+      type: "string",
     },
-  },
+  ],
 };
