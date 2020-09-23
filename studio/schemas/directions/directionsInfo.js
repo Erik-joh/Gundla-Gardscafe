@@ -16,7 +16,7 @@ export default {
     {
       name: "info",
       title: "Information",
-      type: "string",
+      type: "text",
     },
   ],
 };

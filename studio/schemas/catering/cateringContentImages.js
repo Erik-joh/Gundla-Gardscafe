@@ -4,6 +4,11 @@ export default {
   type: "object",
   fields: [
     {
+      name: "title",
+      title: "Titel",
+      type: "string",
+    },
+    {
       name: "Image",
       title: "Innehållsbild",
       type: "image",

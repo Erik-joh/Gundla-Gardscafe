@@ -7,7 +7,7 @@ import styles from "../styles/activities.module.css";
 export default function Activities(props) {
   console.log(props.posts);
   return (
-    <Layout menu={props.menu}>
+    <Layout title="Aktiviteter" menu={props.menu}>
       <div className={styles.activities}>
         <Block
           className={styles.activitiesBlock}

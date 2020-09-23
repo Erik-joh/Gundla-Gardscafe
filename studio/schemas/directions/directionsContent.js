@@ -19,7 +19,7 @@ export default {
     {
       name: "infoText",
       title: "Informationstext",
-      type: "string",
+      type: "text",
     },
   ],
 };

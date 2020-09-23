@@ -16,7 +16,7 @@ export default {
     {
       name: "weddingAnswer",
       title: "Ett svar",
-      type: "string",
+      type: "text",
     },
     {
       name: "weddingFacilities",

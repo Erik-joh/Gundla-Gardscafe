@@ -8,7 +8,7 @@ import urlFor from "../imageBuilder";
 export default function Organizer(props) {
   console.log(props);
   return (
-    <Layout menu={props.menu}>
+    <Layout title="Hitta hit" menu={props.menu}>
       <div className={styles.directionsWrapper}>
         <div className={styles.directionsInfo}>
           {props.directions.directionsInfo.map((item) => {

@@ -10,7 +10,7 @@ import ImageSwiper from "../components/catering/imageSwiper/Swiper";
 
 export default function Catering(props) {
   return (
-    <Layout menu={props.menu}>
+    <Layout title="Catering" title="Catering" menu={props.menu}>
       <div>
         <div className={styles.cateringWrapper}>
           {props.catering.cateringHeader.map((item) => {
