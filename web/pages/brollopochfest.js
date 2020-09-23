@@ -11,7 +11,7 @@ import WeddingInfoSection from "../components/wedding/info/weddingInfoSection";
 export default function Wedding(props) {
   console.log(props);
   return (
-    <Layout menu={props.menu}>
+    <Layout title="Bröllop och fest" menu={props.menu}>
       <div className={styles.weddingWrapper}>
         <div className={styles.weddingHeader}>
           {props.wedding.weddingHeader.map((item) => {

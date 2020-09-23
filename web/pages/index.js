@@ -18,7 +18,7 @@ export default function Home(props) {
     instaArray = instaPosts.graphql.user.edge_owner_to_timeline_media.edges;
   }
   return (
-    <Layout menu={props.menu}>
+    <Layout title="Gundla gårdscafé" menu={props.menu}>
       <div className={styles.frontpage}>
         <div className={styles.blockContainer}>
           {props.posts.blockItem.map((item) => {

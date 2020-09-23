@@ -4,9 +4,14 @@ export default {
   type: "object",
   fields: [
     {
+      name: "title",
+      title: "Titel",
+      type: "string",
+    },
+    {
       name: "slideShowQuote",
       title: "Citat",
-      type: "string",
+      type: "text",
     },
   ],
 };

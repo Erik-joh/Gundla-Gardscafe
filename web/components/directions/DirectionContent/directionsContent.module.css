@@ -1,0 +1,61 @@
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contentWrapper h2 {
+  padding: 2rem 0 0 2rem;
+}
+
+.contentWrapper p {
+  padding: 0.5rem 0 0 2rem;
+}
+
+.textOrderBus,
+.textOrderCar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.textOrderBus {
+  background-color: #efece0;
+}
+
+.textOrderCar {
+  color: white;
+  background-color: #2d231e;
+}
+
+.contentWrapper img {
+  width: 70%;
+}
+
+.bus,
+.car {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 900px) {
+  .contentWrapper {
+    padding: 0;
+  }
+
+  .contentWrapper img {
+    width: 100%;
+  }
+
+  .bus,
+  .car {
+    flex-direction: column;
+  }
+
+  .contentWrapper h2 {
+    padding: 2rem 0 0 1.5rem;
+  }
+
+  .contentWrapper p {
+    padding: 1rem 1.5rem 3rem 1.5rem;
+  }
+}

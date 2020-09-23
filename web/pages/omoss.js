@@ -7,7 +7,7 @@ import History from "../components/about/history/history";
 
 export default function About({ posts, menu }) {
   return (
-    <Layout menu={menu}>
+    <Layout title="Om oss" menu={menu}>
       <div className={styles.about}>
         <Block
           className={styles.activitiesBlock}

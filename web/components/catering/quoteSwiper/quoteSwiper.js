@@ -22,9 +22,6 @@ const quoteSwiper = (props) => {
         <SwiperSlide>
           <p>{props.quoteTwo}</p>
         </SwiperSlide>
-        <SwiperSlide>
-          <p>{props.quoteThree}</p>
-        </SwiperSlide>
       </Swiper>
     </div>
   );
