@@ -33,7 +33,7 @@
     width: 300%;
   }
 
-  .leftGroup {
-    display: block;
+  .bottomLeftImage {
+    border: none;
   }
 }
