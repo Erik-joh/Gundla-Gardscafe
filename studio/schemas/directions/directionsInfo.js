@@ -14,9 +14,9 @@ export default {
       type: "string",
     },
     {
-      name: "paragraph",
-      title: "paragraf",
-      type: "text",
+      name: "info",
+      title: "Information",
+      type: "string",
     },
   ],
 };

@@ -1,12 +1,9 @@
 .directionsWrapper {
   padding-left: 231px;
-  display: flex;
 }
 
-.directionsInfo {
-  width: 40%;
-}
-
-.directionsImage {
-  width: 60%;
+@media only screen and (max-width: 900px) {
+  .directionsWrapper {
+    padding: 0;
+  }
 }
