@@ -2,7 +2,7 @@ import styles from "../styles/directions.module.css";
 import client from "../client";
 import Layout from "../components/layout";
 import DirectionsInfo from "../components/directions/Info/directionsInfo";
-import DirectionsContent from "../components/directions/DirectionContent/DirectionsContent";
+import DirectionsContent from "../components/directions/DirectionContent/directionsContent";
 import urlFor from "../imageBuilder";
 
 export default function Organizer(props) {
