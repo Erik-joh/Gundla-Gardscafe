@@ -22,6 +22,7 @@ export default function About({ posts, menu }) {
         <ImageBlock
           image={posts.topImage[0].poster}
           alt={posts.topImage[0].altText}
+          imageWidth={0.58}
         />
         <div className={styles.historyContainer}>
           <h3>Vår historia</h3>
@@ -45,6 +46,7 @@ export default function About({ posts, menu }) {
                   alt={item.altText}
                   width="100%"
                   key={item._key}
+                  imageWidth={0.5}
                 />
               </div>
             );
