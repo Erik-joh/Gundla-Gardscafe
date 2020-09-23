@@ -20,7 +20,6 @@ export default function Home(props) {
   return (
     <Layout menu={props.menu}>
       <div className={styles.frontpage}>
-        {/* <h1>{props.posts.name}</h1> */}
         <div className={styles.blockContainer}>
           {props.posts.blockItem.map((item) => {
             count++;

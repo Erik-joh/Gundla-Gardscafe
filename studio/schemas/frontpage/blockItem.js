@@ -36,5 +36,10 @@ export default {
         hotspot: true,
       },
     },
+    {
+      name: "alt",
+      title: "Bildbeskrivning",
+      type: "string",
+    },
   ],
 };

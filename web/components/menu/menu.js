@@ -22,7 +22,13 @@ export default function Menu(props) {
         }}
       />
       <div className={`${styles.menu} ${show}`}>
-        <img src={urlFor(props.logo).url()} />
+        <picture>
+          <source media="(min-width: 900px)" srcSet="/logo.png" />
+          <img
+            src="/logoBlack.png"
+            alt="En solros över texten Gundla gårdscafé"
+          />
+        </picture>
         <nav>
           {props.menuLinks.map((item) => {
             return (

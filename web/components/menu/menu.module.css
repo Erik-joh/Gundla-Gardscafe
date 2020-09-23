@@ -1,8 +1,9 @@
 .menu {
   position: fixed;
   width: 231px;
-  height: 100vh;
+  height: 102vh;
   background-color: black;
+  overflow: scroll;
 }
 .menu a {
   color: white;
@@ -14,8 +15,8 @@
   flex-direction: column;
   align-items: flex-start;
   border-bottom: rgba(255, 255, 255, 0.4) 0.5px solid;
-  padding-bottom: 16px;
-  margin-bottom: 22px;
+  padding-bottom: 1.7%;
+  margin-bottom: 2.3%;
 }
 .menu > nav > a {
   font-family: Nunito;
@@ -23,12 +24,15 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 6px;
+  margin-bottom: 0.6%;
 }
-.menu > img {
+.menu > picture {
   margin-left: 26px;
-  margin-right: 26px;
-  margin-bottom: 16px;
+  width: 80%;
+  margin-bottom: 1.7%;
+}
+.menu > picture > img {
+  width: 80%;
 }
 .menu h4 {
   color: white;
@@ -39,22 +43,22 @@
 .titelTextContainer {
   margin-left: 32px;
   width: 80%;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .titelTextContainer > div {
   width: 80%;
+  margin-bottom: 3%;
 }
 .socialmediaContainer {
   width: 80%;
   margin-left: 32px;
   display: flex;
-  padding-bottom: 16px;
-  margin-top: 22px;
+  padding-bottom: 1.7%;
+  margin-top: 2.3%;
   border-bottom: rgba(255, 255, 255, 0.4) 0.5px solid;
-  margin-bottom: 16px;
+  margin-bottom: 1.7%;
 }
 .socialmediaContainer > a {
   margin-right: 22px;
@@ -77,10 +81,14 @@
     transform: translateX(-100%);
     transition: all 0.4s ease-in-out;
   }
-  .menu > img {
+  .menu > picture {
     width: 50%;
+    margin-left: 0;
     margin-top: 18px;
     margin-bottom: 7px;
+  }
+  .menu > picture > img {
+    width: 100%;
   }
   .menu nav {
     height: auto;

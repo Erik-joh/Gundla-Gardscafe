@@ -6,6 +6,7 @@ import styles from "../styles/activities.module.css";
 
 export default function Activities(props) {
   console.log(props.posts);
+  console.log(props.alt);
   return (
     <Layout menu={props.menu}>
       <div className={styles.activities}>
@@ -19,6 +20,7 @@ export default function Activities(props) {
           key={props.posts.blockItem[0]._key}
           id={6}
           width={"33%"}
+          alt={props.posts.blockItem[0].alt}
         />
         <Activity
           image={props.posts.activity[0].poster}
@@ -26,6 +28,8 @@ export default function Activities(props) {
           description={props.posts.activity[0].description}
           date={props.posts.activity[0].date}
           url={props.posts.activity[0].url}
+          imageWidth={0.67}
+          alt={props.posts.activity[0].alt}
           width="67%"
         />
         <Activity
@@ -34,6 +38,8 @@ export default function Activities(props) {
           description={props.posts.activity[1].description}
           date={props.posts.activity[1].date}
           url={props.posts.activity[1].url}
+          imageWidth={0.67}
+          alt={props.posts.activity[1].alt}
           width="67%"
         />
         <Activity
@@ -42,6 +48,8 @@ export default function Activities(props) {
           description={props.posts.activity[2].description}
           date={props.posts.activity[2].date}
           url={props.posts.activity[2].url}
+          imageWidth={0.33}
+          alt={props.posts.activity[2].alt}
           width="33%"
         />
 
@@ -55,6 +63,7 @@ export default function Activities(props) {
           key={props.posts.blockItem[1]._key}
           id={6}
           width={"33%"}
+          alt={props.posts.blockItem[1].alt}
         />
         <Activity
           image={props.posts.activity[3].poster}
@@ -62,6 +71,8 @@ export default function Activities(props) {
           description={props.posts.activity[3].description}
           date={props.posts.activity[3].date}
           url={props.posts.activity[3].url}
+          imageWidth={0.67}
+          alt={props.posts.activity[3].alt}
           width="67%"
         />
       </div>

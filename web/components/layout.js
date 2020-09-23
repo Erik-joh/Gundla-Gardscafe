@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Menu from "./menu/menu";
+import Footer from "./footer/footer";
 
 export default function Layout(props) {
   return (
@@ -29,6 +30,7 @@ export default function Layout(props) {
       />
 
       <section> {props.children}</section>
+      <Footer />
     </main>
   );
 }

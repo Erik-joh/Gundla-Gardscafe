@@ -1,5 +1,5 @@
 import styles from "./activity.module.css";
-import urlFor from "../../../imageBuilder";
+import RespPicture from "../../respPicture/respPicture";
 import PlusSign from "../plusSign/plusSign";
 import React, { useState } from "react";
 
@@ -21,7 +21,11 @@ export default function Activity(props) {
       className={`${styles.activity} ${increaseHeight}`}
       style={{ width: props.width }}
     >
-      <img src={urlFor(props.image).url()} />
+      <RespPicture
+        image={props.image}
+        alt={props.alt}
+        width={props.imageWidth}
+      />
       <div className={`${styles.gradient} ${gradient}`}></div>
       <h3>{props.date}</h3>
       <div className={styles.contentContainer}>

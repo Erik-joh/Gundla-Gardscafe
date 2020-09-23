@@ -6,6 +6,12 @@
 .activitiesBlock {
   background-color: black;
 }
+.activities > :nth-child(1) {
+  background: #fffdf8;
+}
+.activities > :nth-child(5) {
+  background: #fffdf8;
+}
 @media only screen and (max-width: 900px) {
   .activities {
     width: 100%;

@@ -13,7 +13,7 @@ export default {
     },
     {
       name: "altText",
-      title: "Bild beskrivning",
+      title: "Bildbeskrivning",
       type: "string",
     },
   ],
