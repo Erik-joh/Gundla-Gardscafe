@@ -50,7 +50,6 @@ export default function Catering(props) {
           <QuoteSwiper
             quoteOne={props.catering.quoteSlideshow[0].slideShowQuote}
             quoteTwo={props.catering.quoteSlideshow[1].slideShowQuote}
-            quoteThree={props.catering.quoteSlideshow[2].slideShowQuote}
             key={props._key}
           />
 
