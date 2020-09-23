@@ -22,7 +22,7 @@ export default function Block(props) {
     style = styles.bgImageBlock;
     titel = <h1>{props.title}</h1>;
     var image = (
-      <RespPicture image={props.image} alt={props.alt} width={0.67} />
+      <RespPicture image={props.image} alt={props.alt} width={0.75} />
     );
   } else {
     style = styles.logoImageBlock;
@@ -41,7 +41,7 @@ export default function Block(props) {
     style = styles.bgImageBlock;
     style2 = styles.topBlock;
     var image = (
-      <RespPicture image={props.image} alt={props.alt} width={0.67} />
+      <RespPicture image={props.image} alt={props.alt} width={0.75} />
     );
   }
   var link;
