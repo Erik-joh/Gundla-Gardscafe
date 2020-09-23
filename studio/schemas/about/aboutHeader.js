@@ -12,7 +12,7 @@ export default {
     {
       name: "description",
       title: "Beskrivning",
-      type: "string",
+      type: "text",
     },
 
     {
@@ -22,6 +22,11 @@ export default {
       options: {
         hotspot: true,
       },
+    },
+    {
+      name: "altText",
+      title: "Bildbeskrivning",
+      type: "string",
     },
   ],
 };

@@ -6,7 +6,6 @@ import ImageBlock from "../components/about/imageBlock/imageBlock";
 import History from "../components/about/history/history";
 
 export default function About({ posts, menu }) {
-  console.log(posts);
   return (
     <Layout menu={menu}>
       <div className={styles.about}>
@@ -24,6 +23,7 @@ export default function About({ posts, menu }) {
           alt={posts.topImage[0].altText}
           imageWidth={0.58}
         />
+
         <div className={styles.historyContainer}>
           <h3>Vår historia</h3>
           {posts.history.map((item) => {
@@ -40,7 +40,7 @@ export default function About({ posts, menu }) {
         <div className={styles.imageContainer}>
           {posts.midImages.map((item) => {
             return (
-              <div>
+              <div key={item._key}>
                 <ImageBlock
                   image={item.poster}
                   alt={item.altText}

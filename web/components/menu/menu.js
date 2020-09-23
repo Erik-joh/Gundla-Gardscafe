@@ -3,6 +3,7 @@ import styles from "./menu.module.css";
 import urlFor from "../../imageBuilder";
 import { useEffect, useState } from "react";
 import Hamburger from "../hamburger/hamburger";
+import TextSplit from "../textSplit/textSplit";
 
 export default function Menu(props) {
   const [show, setShow] = useState("");
@@ -40,10 +41,11 @@ export default function Menu(props) {
         </nav>
         <div className={styles.titelTextContainer}>
           {props.menuTitleText.map((item) => {
+            console.log(item);
             return (
               <div key={item._key}>
                 <h4>{item.titel}</h4>
-                <pre>{item.paragraph}</pre>
+                <TextSplit string={item.paragraph} />
               </div>
             );
           })}

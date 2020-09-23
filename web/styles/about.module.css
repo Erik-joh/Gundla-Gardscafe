@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
 }
+
 .historyContainer {
   background: #efece0;
   display: flex;
@@ -19,11 +20,11 @@
   margin-bottom: 20px;
 }
 .imageContainer {
-  max-height: 90vh;
   width: 42%;
 }
 .imageContainer > div {
   height: 50%;
+  width: 100%;
 }
 .imageContainer > div > div {
   height: 100%;
@@ -38,6 +39,12 @@
 .about > :nth-child(6) {
   min-height: 40vh;
   background: #efece0;
+}
+.about > :nth-child(5) div {
+  width: 75%;
+}
+.about > :nth-child(6) div {
+  width: 75%;
 }
 .about > :nth-child(2) {
   width: 58%;
