@@ -17,7 +17,7 @@ export default {
     {
       name: "description",
       title: "Beskrivning",
-      type: "string",
+      type: "text",
     },
     {
       name: "url",

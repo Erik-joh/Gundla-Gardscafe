@@ -37,7 +37,7 @@
 .menu h4 {
   color: white;
 }
-.menu pre {
+.menu p {
   color: white;
 }
 .titelTextContainer {
@@ -123,7 +123,7 @@
     line-height: 34px;
     color: black;
   }
-  .menu pre {
+  .menu p {
     color: black;
   }
   .titelTextContainer {

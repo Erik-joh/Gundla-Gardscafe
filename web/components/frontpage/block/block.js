@@ -73,6 +73,7 @@ export default function Block(props) {
       );
     }
   }
+
   return (
     <div className={`${style} ${style2}`} style={{ width: props.width }}>
       {image}
