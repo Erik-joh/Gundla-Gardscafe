@@ -66,6 +66,27 @@ pre {
   font-size: 16px;
   line-height: 24px;
 }
+
+.swiper-button-next {
+  background-image: url(../public/rightArrowSwiper.svg);
+  background-repeat: no-repeat;
+  padding: 0 2rem;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  background-image: url(../public/leftArrowSwiper.svg);
+  background-repeat: no-repeat;
+  padding: 0 2rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #706858 !important;
+}
 @media only screen and (max-width: 900px) {
   h1 {
     font-size: 36px;

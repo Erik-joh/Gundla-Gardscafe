@@ -10,7 +10,7 @@ import ImageSwiper from "../components/catering/imageSwiper/Swiper";
 
 export default function Catering(props) {
   return (
-    <Layout menu={props.menu}>
+    <Layout title="Catering" title="Catering" menu={props.menu}>
       <div>
         <div className={styles.cateringWrapper}>
           {props.catering.cateringHeader.map((item) => {
@@ -50,7 +50,6 @@ export default function Catering(props) {
           <QuoteSwiper
             quoteOne={props.catering.quoteSlideshow[0].slideShowQuote}
             quoteTwo={props.catering.quoteSlideshow[1].slideShowQuote}
-            quoteThree={props.catering.quoteSlideshow[2].slideShowQuote}
             key={props._key}
           />
 

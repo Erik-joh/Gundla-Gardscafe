@@ -2,8 +2,8 @@
   padding-left: 231px;
 }
 
-.organizerHeader {
-  background-color: #efece0;
+.organizerHeader > div {
+  background-color: #efece0 !important;
 }
 
 .organizerHeader p {

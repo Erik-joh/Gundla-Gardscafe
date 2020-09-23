@@ -1,6 +1,6 @@
 export default {
-  name: "weddingHeader",
-  title: "Titelinformation",
+  name: "directionsInfo",
+  title: "Hitta hit Uppgifter",
   type: "object",
   fields: [
     {
@@ -9,18 +9,13 @@ export default {
       type: "string",
     },
     {
-      name: "headerImage",
-      title: "Titelbild",
-      type: "image",
-    },
-    {
       name: "subTitle",
-      title: "Underrubrik",
+      title: "Undertitel",
       type: "string",
     },
     {
-      name: "description",
-      title: "Beskrivning",
+      name: "info",
+      title: "Information",
       type: "text",
     },
   ],

@@ -4,9 +4,14 @@ export default {
   type: "object",
   fields: [
     {
+      name: "title",
+      title: "Titel",
+      type: "string",
+    },
+    {
       name: "Food",
       title: "Beskriv rätten",
-      type: "string",
+      type: "text",
     },
   ],
 };

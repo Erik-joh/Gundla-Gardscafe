@@ -6,7 +6,7 @@ import Form from "../components/catering/booking/booking";
 
 export default function Organizer(props) {
   return (
-    <Layout menu={props.menu}>
+    <Layout title="Ansök" menu={props.menu}>
       <div className={styles.organizerWrapper}>
         <div className={styles.organizerHeader}>
           {props.organizer.organizerHeader.map((item) => {
@@ -28,6 +28,10 @@ export default function Organizer(props) {
                 title={"arrangörsförfrågan"}
                 telephoneNumber={item.telephoneNumber}
                 email={item.email}
+                placeholder={
+                  "Vad är det för typ av arrangemang? Vad behöver du av oss? Hur lång tid tar det? Tidigare erfarenheter?"
+                }
+                placeholderDate={"2020/10/11"}
                 key={item._key}
               />
             );

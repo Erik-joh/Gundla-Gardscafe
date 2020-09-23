@@ -1,13 +1,9 @@
-.div {
-  padding: 2rem 0;
+.directionsWrapper {
+  padding-left: 231px;
 }
 
 @media only screen and (max-width: 900px) {
-  .swipe {
-    width: 200%;
-  }
-
-  .div {
+  .directionsWrapper {
     padding: 0;
   }
 }

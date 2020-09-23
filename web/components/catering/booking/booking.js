@@ -72,7 +72,7 @@ export default class Form extends React.Component {
           </div>
           <div className={styles.last}>
             <label>
-              <h4>Typ av tillställningen och önskemål</h4>
+              <h4>Typ av tillställning och önskemål</h4>
             </label>
             <textarea
               maxLength="500"

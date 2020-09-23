@@ -29,6 +29,9 @@ import about from "./about/about";
 import imageBlock from "./about/imageBlock";
 import textBlock from "./about/textBlock";
 import aboutHeader from "./about/aboutHeader";
+import directions from "./directions/directions";
+import directionsContent from "./directions/directionsContent";
+import directionsInfo from "./directions/directionsInfo";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -47,6 +50,7 @@ export default createSchema({
     organizer,
     wedding,
     about,
+    directions,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     menuLink,
@@ -63,6 +67,8 @@ export default createSchema({
     weddingHeader,
     weddingQuestions,
     activity,
+    directionsInfo,
+    directionsContent,
     textBlock,
     aboutHeader,
     imageBlock,
