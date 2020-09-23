@@ -2,6 +2,7 @@ import urlFor from "../../../imageBuilder";
 import styles from "./block.module.css";
 import ArrowLink from "../../arrowLink/arrowLink";
 import RespPicture from "../../respPicture/respPicture";
+import TextSplit from "../../textSplit/textSplit";
 
 export default function Block(props) {
   var link;
@@ -36,15 +37,16 @@ export default function Block(props) {
   }
   var logo;
   if (id == 1) {
-    logo = <img src="/logo.png" />;
+    logo = <img src="/logoBig.png" />;
     style = styles.bgImageBlock;
+    style2 = styles.topBlock;
     var image = (
       <RespPicture image={props.image} alt={props.alt} width={0.67} />
     );
   }
   var link;
   if (props.link) {
-    if (id == 6 || id == 7) {
+    if (id == 6) {
       link = (
         <ArrowLink
           slug={props.slug.current}
@@ -53,7 +55,7 @@ export default function Block(props) {
           color="black"
         />
       );
-    } else if (id == 5) {
+    } else if (id == 5 || id == 7) {
       link = (
         <ArrowLink
           slug={props.slug.current}
@@ -78,10 +80,10 @@ export default function Block(props) {
     <div className={`${style} ${style2}`} style={{ width: props.width }}>
       {image}
       <div>
-        {logo}
         <div>
+          {logo}
           {titel}
-          <p>{props.description}</p>
+          <TextSplit string={props.description} />
         </div>
       </div>
       {link}

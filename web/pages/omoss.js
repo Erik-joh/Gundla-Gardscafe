@@ -56,7 +56,7 @@ export default function About({ posts, menu }) {
           return (
             <Block
               className={styles.bottomTextBlocks}
-              title={item.titel}
+              title={item.title}
               description={item.description}
               key={item._key}
               id={2}

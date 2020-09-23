@@ -5,16 +5,20 @@ export default function InstaPosts(props) {
   return (
     <div className={styles.instaPostsContainer}>
       <div className={styles.instaInfoContainer}>
-        <img src={"/instaIconLarge.png"} />
-        <h4>@gundlagardscafe</h4>
+        <a href="https://www.instagram.com/gundlagardscafe/ ">
+          <img src={"/instaIconLarge.png"} />
+          <h4>@gundlagardscafe</h4>
+        </a>
       </div>
       {postsSliced.map((item) => {
         return (
           <div className={styles.instaBlock} key={item.node.id}>
-            <img
-              src={item.node.thumbnail_resources[4].src}
-              className={styles.instaImage}
-            />
+            <a href="https://www.instagram.com/gundlagardscafe/ ">
+              <img
+                src={item.node.thumbnail_resources[4].src}
+                className={styles.instaImage}
+              />
+            </a>
           </div>
         );
       })}
