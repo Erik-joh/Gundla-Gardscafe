@@ -12,7 +12,7 @@ const imageSwiper = (props) => {
   return (
     <div className={styles.div}>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={115}
         slidesPerView={1.3}
         navigation
         loop

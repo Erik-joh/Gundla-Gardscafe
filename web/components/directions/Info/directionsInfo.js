@@ -19,6 +19,8 @@ export default function DirectionsInfo(props) {
             tabIndex="0"
             width="100%"
             height="100%"
+            loading="lazy"
+            name="Map"
           ></iframe>
         </div>
       </div>
