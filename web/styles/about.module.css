@@ -40,10 +40,7 @@
   min-height: 40vh;
   background: #efece0;
 }
-.about > :nth-child(5) div {
-  width: 75%;
-}
-.about > :nth-child(6) div {
+.about > :nth-child(n + 5) p {
   width: 75%;
 }
 .about > :nth-child(2) {
@@ -62,6 +59,7 @@
   }
   .about > :nth-child(n + 5) p {
     text-align: start;
+    width: 100%;
   }
 
   .about > * {
