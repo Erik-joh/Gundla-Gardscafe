@@ -14,4 +14,9 @@ export default {
       type: "slug",
     },
   ],
+  preview: {
+    select: {
+      title: "link",
+    },
+  },
 };

@@ -17,4 +17,10 @@ export default {
       type: "url",
     },
   ],
+  preview: {
+    select: {
+      title: "link",
+      media: "poster",
+    },
+  },
 };
