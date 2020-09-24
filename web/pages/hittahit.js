@@ -6,7 +6,6 @@ import DirectionsContent from "../components/directions/DirectionContent/directi
 import urlFor from "../imageBuilder";
 
 export default function Organizer(props) {
-  console.log(props);
   return (
     <Layout title="Hitta hit" menu={props.menu}>
       <div className={styles.directionsWrapper}>

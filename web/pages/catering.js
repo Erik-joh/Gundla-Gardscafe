@@ -9,7 +9,6 @@ import QuoteSwiper from "../components/catering/quoteSwiper/quoteSwiper";
 import ImageSwiper from "../components/catering/imageSwiper/Swiper";
 
 export default function Catering(props) {
-  console.log(props);
   return (
     <Layout title="Catering" menu={props.menu}>
       <div>

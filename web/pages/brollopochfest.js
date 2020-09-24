@@ -9,7 +9,6 @@ import ImageSwiper from "../components/catering/imageSwiper/Swiper";
 import WeddingInfoSection from "../components/wedding/info/weddingInfoSection";
 
 export default function Wedding(props) {
-  console.log(props);
   return (
     <Layout title="Bröllop och fest" menu={props.menu}>
       <div className={styles.weddingWrapper}>
@@ -96,8 +95,6 @@ export default function Wedding(props) {
               />
             );
           })}
-        </div>
-        <div className={styles.weddingSwiper}>
           <ImageSwiper
             imageOne={urlFor(props.catering.imageSlideshow[0].slideImage).url()}
             altImageOne={props.catering.imageSlideshow[0].alt}
