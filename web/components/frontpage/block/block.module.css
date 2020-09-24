@@ -67,6 +67,7 @@
 }
 .topBlock div > p {
   margin: 0;
+  width: 70%;
 }
 .topBlock > div div {
   height: 50%;
@@ -160,6 +161,7 @@
     padding-bottom: 10%;
   }
   .topBlock div > p {
+    width: 100%;
     margin: 0;
   }
   .topBlock > div div {
