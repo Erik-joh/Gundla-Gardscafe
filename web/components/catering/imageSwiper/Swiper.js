@@ -5,6 +5,7 @@ import styles from "./swiper.module.css";
 import Navigation from "../../../pages/_app";
 import Pagination from "../../../pages/_app";
 import Scrollbar from "../../../pages/_app";
+import RespPicture from "../../respPicture/respPicture";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar]);
 
@@ -19,13 +20,25 @@ const imageSwiper = (props) => {
         scrollbar={{ draggable: true }}
       >
         <SwiperSlide className={styles.slide}>
-          <img className={styles.swipe} src={props.imageTwo} />
+          <RespPicture
+            image={props.imageTwo}
+            alt={props.altImageTwo}
+            width={1}
+          />
         </SwiperSlide>
         <SwiperSlide className={styles.slide}>
-          <img className={styles.swipe} src={props.imageOne} />
+          <RespPicture
+            image={props.imageOne}
+            alt={props.altImageOne}
+            width={1}
+          />
         </SwiperSlide>
         <SwiperSlide className={styles.slide}>
-          <img className={styles.swipe} src={props.imageThree} />
+          <RespPicture
+            image={props.imageThree}
+            alt={props.altImageThree}
+            width={1}
+          />
         </SwiperSlide>
       </Swiper>
     </div>

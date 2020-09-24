@@ -6,8 +6,9 @@
   width: auto;
 }
 
-.headerImage img {
-  width: 200%;
+.headerImage > picture > img {
+  width: 100%;
+  margin-bottom: -4px;
 }
 
 .header h1 {
@@ -50,8 +51,8 @@
     justify-content: center;
   }
 
-  .headerImage {
-    width: 100%;
+  .headerImage > picture > img {
+    width: 300%;
   }
 
   .text {

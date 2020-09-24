@@ -18,6 +18,7 @@ export default function Wedding(props) {
             return (
               <CateringHeader
                 image={item.headerImage}
+                altHeader={item.alt}
                 title={item.title}
                 subTitle={item.subTitle}
                 description={item.description}
@@ -55,7 +56,9 @@ export default function Wedding(props) {
         <div className={styles.infoSection}>
           <WeddingInfoSection
             imageLeft={urlFor(props.wedding.weddingQuestions[3].Images).url()}
+            altImageLeft={props.wedding.weddingQuestions[3].alt}
             imageRight={urlFor(props.wedding.weddingQuestions[4].Images).url()}
+            altImageRight={props.wedding.weddingQuestions[4].alt}
             title={props.wedding.weddingQuestions[0].Title}
             questionOne={props.wedding.weddingQuestions[0].weddingQuestion}
             answerOne={props.wedding.weddingQuestions[0].weddingAnswer}
@@ -97,10 +100,13 @@ export default function Wedding(props) {
         <div className={styles.weddingSwiper}>
           <ImageSwiper
             imageOne={urlFor(props.catering.imageSlideshow[0].slideImage).url()}
+            altImageOne={props.catering.imageSlideshow[0].alt}
             imageTwo={urlFor(props.catering.imageSlideshow[1].slideImage).url()}
+            altImageTwo={props.catering.imageSlideshow[1].alt}
             imageThree={urlFor(
               props.catering.imageSlideshow[2].slideImage
             ).url()}
+            altImageThree={props.catering.imageSlideshow[2].alt}
             key={props._key}
           />
         </div>

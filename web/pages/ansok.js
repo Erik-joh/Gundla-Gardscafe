@@ -10,9 +10,11 @@ export default function Organizer(props) {
       <div className={styles.organizerWrapper}>
         <div className={styles.organizerHeader}>
           {props.organizer.organizerHeader.map((item) => {
+            console.log(item);
             return (
               <CateringHeader
                 image={item.headerImage}
+                altHeader={item.alt}
                 title={item.title}
                 subTitle={item.subTitle}
                 description={item.description}

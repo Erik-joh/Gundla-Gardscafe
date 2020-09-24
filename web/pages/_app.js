@@ -5,9 +5,7 @@ import Pagination from "swiper/components/pagination/pagination.scss";
 import Scrollbar from "swiper/components/scrollbar/scrollbar.scss";
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <Component {...pageProps} {...Navigation} {...Pagination} {...Scrollbar} />
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;

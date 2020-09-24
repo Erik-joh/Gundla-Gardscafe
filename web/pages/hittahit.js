@@ -31,11 +31,13 @@ export default function Organizer(props) {
             firstImage={urlFor(
               props.directions.directionsContent[0].images
             ).url()}
+            altFirstImage={props.directions.directionsContent[0].alt}
             titleCar={props.directions.directionsContent[1].title}
             textInfoCar={props.directions.directionsContent[1].infoText}
             secondImage={urlFor(
               props.directions.directionsContent[1].images
             ).url()}
+            altSecondImage={props.directions.directionsContent[1].alt}
             key={props._key}
           />
         </div>

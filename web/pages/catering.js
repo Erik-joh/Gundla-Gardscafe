@@ -9,14 +9,16 @@ import QuoteSwiper from "../components/catering/quoteSwiper/quoteSwiper";
 import ImageSwiper from "../components/catering/imageSwiper/Swiper";
 
 export default function Catering(props) {
+  console.log(props);
   return (
-    <Layout title="Catering" title="Catering" menu={props.menu}>
+    <Layout title="Catering" menu={props.menu}>
       <div>
         <div className={styles.cateringWrapper}>
           {props.catering.cateringHeader.map((item) => {
             return (
               <CateringHeader
                 image={item.headerImage}
+                altHeader={item.alt}
                 title={item.title}
                 subTitle={item.subTitle}
                 description={item.description}
@@ -26,10 +28,14 @@ export default function Catering(props) {
           })}
           <CateringGroup
             topLeftImage={props.catering.contentImages[3].Image}
+            altTopLeft={props.catering.contentImages[3].alt}
             menu={props.catering.cateringMenu}
             topRightImage={props.catering.contentImages[0].Image}
+            altTopRight={props.catering.contentImages[0].alt}
             bottomLeftImage={props.catering.contentImages[2].Image}
+            altBottomLeft={props.catering.contentImages[2].alt}
             bottomRightImage={props.catering.contentImages[1].Image}
+            altBottomRight={props.catering.contentImages[1].alt}
             key={props._key}
           />
           {props.catering.cateringInfo.map((item) => {
@@ -55,10 +61,13 @@ export default function Catering(props) {
 
           <ImageSwiper
             imageOne={urlFor(props.catering.imageSlideshow[0].slideImage).url()}
+            altImageOne={props.catering.imageSlideshow[0].alt}
             imageTwo={urlFor(props.catering.imageSlideshow[1].slideImage).url()}
+            altImageTwo={props.catering.imageSlideshow[1].alt}
             imageThree={urlFor(
               props.catering.imageSlideshow[2].slideImage
             ).url()}
+            altImageThree={props.catering.imageSlideshow[2].alt}
             key={props._key}
           />
         </div>

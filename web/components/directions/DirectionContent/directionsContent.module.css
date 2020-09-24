@@ -8,7 +8,7 @@
 }
 
 .contentWrapper p {
-  padding: 0.5rem 2rem 0 2rem;
+  padding: 1rem 2rem 0.5rem 2rem;
 }
 
 .textOrderBus,
@@ -28,7 +28,12 @@
 }
 
 .contentWrapper img {
-  width: 70%;
+  width: 100%;
+  margin-bottom: -4px;
+}
+
+.car img {
+  margin-left: -1px;
 }
 
 .bus,
@@ -51,11 +56,24 @@
     flex-direction: column;
   }
 
+  .car img {
+    margin-left: 0;
+  }
+
+  .bus img,
+  .car img {
+    margin-bottom: -5px;
+  }
+
   .contentWrapper h2 {
     padding: 2rem 0 0 1.5rem;
   }
 
   .contentWrapper p {
-    padding: 1rem 1.5rem 3rem 1.5rem;
+    padding: 1rem 1.5rem 0rem 1.5rem;
+  }
+
+  .contentWrapper p:last-child {
+    padding-bottom: 1.5rem;
   }
 }

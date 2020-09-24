@@ -3,15 +3,17 @@ import Menu from "../menu/menu";
 import RespPicture from "../../respPicture/respPicture";
 
 export default function CateringGroup(props) {
-  console.log(props);
-
   return (
     <div className={styles.group}>
       <div className={styles.leftGroup}>
-        <RespPicture image={props.topLeftImage} alt={props.alt} width={0.285} />
+        <RespPicture
+          image={props.topLeftImage}
+          alt={props.altTopLeft}
+          width={0.285}
+        />
         <RespPicture
           image={props.bottomLeftImage}
-          alt={props.alt}
+          alt={props.altBottomLeft}
           width={0.285}
         />
       </div>
@@ -45,12 +47,12 @@ export default function CateringGroup(props) {
       <div className={styles.rightGroup}>
         <RespPicture
           image={props.topRightImage}
-          alt={props.alt}
+          alt={props.altTopRight}
           width={0.285}
         />
         <RespPicture
           image={props.bottomRightImage}
-          alt={props.alt}
+          alt={props.altBottomRight}
           width={0.285}
         />
       </div>

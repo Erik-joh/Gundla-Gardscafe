@@ -1,16 +1,12 @@
-import urlFor from "../../../imageBuilder";
 import styles from "./cateringHeader.module.css";
 import TextSplit from "../../textSplit/textSplit";
+import RespPicture from "../../respPicture/respPicture";
 
 export default function CateringHeader(props) {
-  if (props.image) {
-    var image = <img src={urlFor(props.image).url()} />;
-  }
-
   return (
     <div className={styles.header}>
       <div className={styles.headerImage}>
-        {image}
+        <RespPicture image={props.image} alt={props.altHeader} width={1.2} />
         <h1>{props.title}</h1>
       </div>
       <div className={styles.text}>

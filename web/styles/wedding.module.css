@@ -19,7 +19,7 @@
 }
 
 .weddingMenu > div {
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .weddingHeader {
@@ -37,11 +37,11 @@
 
   .weddingMenu div {
     width: auto;
-    align-items: flex-start;
+    padding: 0.5rem 1rem 1rem 1rem;
   }
 
   .weddingMenu > div > p {
-    padding: 0 0 1rem 0;
+    padding: 0.5rem 1rem;
   }
 
   .weddingMenu img {

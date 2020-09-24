@@ -6,12 +6,12 @@
   background-color: #efece0 !important;
 }
 
-.organizerHeader p:last-of-type {
-  padding-bottom: 2rem;
-}
-
 @media only screen and (max-width: 900px) {
   .organizerWrapper {
     padding: 0;
+  }
+
+  .organizerHeader img {
+    width: 500%;
   }
 }

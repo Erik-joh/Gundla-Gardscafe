@@ -1,12 +1,20 @@
 import styles from "./weddingInfoSection.module.css";
-import urlFor from "../../../imageBuilder";
+import RespPicture from "../../respPicture/respPicture";
 
 export default function WeddingInfoSection(props) {
   return (
     <div className={styles.group}>
       <div className={styles.infoImages}>
-        <img className={styles.leftImage} src={props.imageLeft}></img>
-        <img className={styles.rightImage} src={props.imageRight}></img>
+        <RespPicture
+          image={props.imageLeft}
+          alt={props.altImageLeft}
+          width={0.35}
+        />
+        <RespPicture
+          image={props.imageRight}
+          alt={props.altImageRight}
+          width={0.65}
+        />
       </div>
       <div className={styles.info}>
         <div className={styles.qna}>

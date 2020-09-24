@@ -49,12 +49,21 @@
   display: flex;
 }
 
-.leftImage {
+.infoImages img {
+  margin-bottom: -4px;
+}
+
+.infoImages > picture:nth-child(1) {
   width: 35%;
 }
 
-.rightImage {
-  width: 65%;
+.infoImages > picture:nth-child(2) {
+  width: 70%;
+}
+
+.infoImages > picture > img {
+  width: 100%;
+  margin-bottom: -10px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -83,12 +92,10 @@
     padding-top: 3rem;
   }
 
-  .qna h4 {
-    padding: 0 1rem 1rem 1rem;
-  }
-
+  .qna h4,
   .qna p {
     padding: 0 1rem 1rem 1rem;
+    text-align: start;
   }
 
   .facilities h4 {
@@ -102,5 +109,13 @@
   .qna p:last-of-type,
   .facilities p:last-of-type {
     padding-bottom: 4rem;
+  }
+
+  .infoImages > picture:nth-child(1) {
+    width: auto;
+  }
+
+  .infoImages > picture:nth-child(2) {
+    width: auto;
   }
 }
