@@ -41,6 +41,7 @@
 
   .blockContainer > :nth-child(1) {
     height: 100vh;
+    max-height: 100vh;
   }
   .blockContainer > :nth-child(5) {
     order: 2;
