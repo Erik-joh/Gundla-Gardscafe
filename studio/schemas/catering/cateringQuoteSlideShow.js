@@ -9,4 +9,9 @@ export default {
       type: "text",
     },
   ],
+  preview: {
+    select: {
+      title: "slideShowQuote",
+    },
+  },
 };
