@@ -4,14 +4,6 @@ export default {
   type: "document",
   fields: [
     {
-      name: "logo",
-      title: "Logo",
-      type: "image",
-      options: {
-        hotspot: true,
-      },
-    },
-    {
       name: "menuLinks",
       title: "Länkar till navigerings menyn",
       type: "array",
@@ -42,4 +34,13 @@ export default {
       validation: (Rule) => Rule.length(2),
     },
   ],
+  preview: {
+    select: {
+      title: "title",
+    },
+    prepare() {
+      const title = "Navigerings Meny";
+      return { title: title };
+    },
+  },
 };

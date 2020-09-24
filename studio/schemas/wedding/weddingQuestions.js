@@ -39,4 +39,23 @@ export default {
       type: "string",
     },
   ],
+  preview: {
+    select: {
+      title: "title",
+      weddingQuestion: "weddingQuestion",
+      alt: "alt",
+      weddingFacilitiesInfo: "weddingFacilitiesInfo",
+    },
+    prepare({ weddingQuestion, alt, weddingFacilitiesInfo }) {
+      var title;
+      if (weddingQuestion) {
+        title = weddingQuestion;
+      } else if (alt) {
+        title = alt;
+      } else if (weddingFacilitiesInfo) {
+        title = weddingFacilitiesInfo;
+      }
+      return { title: title };
+    },
+  },
 };
