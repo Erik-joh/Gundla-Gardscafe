@@ -1,7 +1,7 @@
 # Gundla Gårdscafé
 
 
-<img src="https://media.giphy.com/media/4TTqqym8oj0Q0/giphy.gif" width="50%">
+<img src="https://media.giphy.com/media/4TTqqym8oj0Q0/giphy.gif" width="75%">
 
 We built an webpage using a headless CMS (Sanity) and Next.js to Gundla Gårdscafé.
 
