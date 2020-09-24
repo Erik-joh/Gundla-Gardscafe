@@ -23,7 +23,7 @@
 .menuGroup {
   display: flex;
   flex-direction: column;
-  width: 33.33%;
+  width: 50.33%;
 }
 
 .leftGroup > picture {
@@ -70,5 +70,9 @@
   .rightGroup > picture > img {
     height: 100%;
     width: 100%;
+  }
+
+  .menuGroup {
+    width: 33.33%;
   }
 }
