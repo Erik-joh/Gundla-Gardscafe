@@ -4,11 +4,6 @@ export default {
   type: "object",
   fields: [
     {
-      name: "Title",
-      title: "Titel",
-      type: "string",
-    },
-    {
       name: "weddingQuestion",
       title: "En fråga",
       type: "string",
