@@ -26,13 +26,15 @@
 .white {
   color: white;
 }
+.longArrow p {
+  bottom: 27px;
+}
 @media only screen and (max-width: 900px) {
   .arrowLink {
     bottom: 0px;
     right: 30px;
   }
   .arrowLink > img {
-    bottom: -24px;
     margin-right: -60%;
   }
 }

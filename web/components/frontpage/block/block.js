@@ -5,6 +5,7 @@ import RespPicture from "../../respPicture/respPicture";
 import TextSplit from "../../textSplit/textSplit";
 
 export default function Block(props) {
+  console.log(props.alt);
   var link;
   if (props.slug) {
     var link = <a href={props.slug.current}>{props.link}</a>;
@@ -36,15 +37,22 @@ export default function Block(props) {
     style2 = styles.width100;
   }
   var logo;
+  var link;
   if (id == 1) {
     logo = <img src="/logoBig.png" />;
     style = styles.bgImageBlock;
     style2 = styles.topBlock;
+    var downArrow = (
+      <img
+        className={styles.downArrow}
+        src="/linkArrowShort.png"
+        alt="En pil neråt"
+      />
+    );
     var image = (
       <RespPicture image={props.image} alt={props.alt} width={0.75} />
     );
   }
-  var link;
   if (props.link) {
     if (id == 6) {
       link = (
@@ -86,6 +94,7 @@ export default function Block(props) {
           <TextSplit string={props.description} />
         </div>
       </div>
+      {downArrow}
       {link}
     </div>
   );

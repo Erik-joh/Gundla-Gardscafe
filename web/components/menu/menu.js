@@ -39,6 +39,11 @@ export default function Menu(props) {
               </Link>
             );
           })}
+          <img
+            src="linkArrowShortBlack.png"
+            alt="En pil neråt"
+            className={styles.downArrow}
+          />
         </nav>
         <div className={styles.titelTextContainer}>
           {props.menuTitleText.map((item) => {
