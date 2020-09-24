@@ -5,8 +5,6 @@ import Activity from "../components/activities/activity/activity";
 import styles from "../styles/activities.module.css";
 
 export default function Activities(props) {
-  console.log(props.posts);
-  console.log(props.alt);
   return (
     <Layout title="Aktiviteter" menu={props.menu}>
       <div className={styles.activities}>

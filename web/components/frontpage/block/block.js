@@ -5,7 +5,6 @@ import RespPicture from "../../respPicture/respPicture";
 import TextSplit from "../../textSplit/textSplit";
 
 export default function Block(props) {
-  console.log(props.alt);
   var link;
   if (props.slug) {
     var link = <a href={props.slug.current}>{props.link}</a>;
