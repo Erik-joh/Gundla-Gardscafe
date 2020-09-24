@@ -31,6 +31,7 @@ export default function Home(props) {
                 slug={item.slug}
                 link={item.link}
                 key={item._key}
+                alt={item.alt}
                 id={count}
               />
             );

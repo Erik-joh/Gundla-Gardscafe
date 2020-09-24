@@ -12,6 +12,9 @@
 .activities > :nth-child(5) {
   background: #fffdf8;
 }
+.activities > :nth-child(4) > :nth-child(4) {
+  width: 85%;
+}
 @media only screen and (max-width: 900px) {
   .activities {
     width: 100%;
@@ -22,5 +25,8 @@
   }
   .activities :nth-child(6) {
     order: 2;
+  }
+  .activities > :nth-child(4) > :nth-child(4) {
+    width: 70%;
   }
 }

@@ -124,6 +124,9 @@
 .width100 p {
   width: 70%;
 }
+.downArrow {
+  display: none;
+}
 @media only screen and (max-width: 900px) {
   .bgImageBlock {
     width: 100%;
@@ -166,6 +169,13 @@
     width: 282px;
     margin-left: unset;
     margin-bottom: unset;
+  }
+  .downArrow {
+    display: block;
+    position: absolute;
+    height: 39px;
+    bottom: 40px;
+    transform: rotate(90deg);
   }
   .logoImageBlock {
     min-width: 100%;

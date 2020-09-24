@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, #000000 100%);
+  min-height: 50vh;
 }
 
 .activity > picture > img {
@@ -91,7 +92,8 @@
   .activity {
     min-width: 100%;
     min-height: 50vh;
-    transition: min-height 0.5s;
+    max-height: 50vh;
+    transition: all 0.5s;
   }
   .contentContainer {
     width: 70%;
@@ -100,7 +102,8 @@
   }
   .increaseHeight {
     min-height: 90vh;
-    transition: min-height 0.5s;
+    max-height: 90vh;
+    transition: all 0.5s;
   }
   .setGradient {
     opacity: 1;
@@ -109,11 +112,19 @@
     opacity: 0;
   }
   .textContainer {
-    transform: translateY(240px) !important;
+    transform: translateY(120px) !important;
     transition: all 0.5s ease 0.05s !important;
   }
   .showText {
     transform: translateY(0px) !important;
     transition: all 0.5s ease 0.1s !important;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .textContainer {
+    transform: translateY(240px) !important;
+  }
+  .showText {
+    transform: translateY(0px) !important;
   }
 }
