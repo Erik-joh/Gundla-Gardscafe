@@ -3,6 +3,7 @@ import TextSplit from "../../textSplit/textSplit";
 import RespPicture from "../../respPicture/respPicture";
 
 export default function CateringHeader(props) {
+  console.log(props);
   return (
     <div className={styles.header}>
       <div className={styles.headerImage}>
