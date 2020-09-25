@@ -14,7 +14,7 @@ export default function Organizer(props) {
               <CateringHeader
                 image={item.headerImage}
                 altHeader={item.alt}
-                title={item.title}
+                title={"Bli arrangör"}
                 subTitle={item.subTitle}
                 description={item.description}
                 key={item._key}

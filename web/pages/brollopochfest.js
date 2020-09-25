@@ -18,7 +18,7 @@ export default function Wedding(props) {
               <CateringHeader
                 image={item.headerImage}
                 altHeader={item.alt}
-                title={item.title}
+                title={"Bröllop & fest"}
                 subTitle={item.subTitle}
                 description={item.description}
                 key={item._key}
